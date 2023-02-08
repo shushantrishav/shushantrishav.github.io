@@ -55,21 +55,21 @@
 <url>
   <loc>https://twitter.com/ShushantRishav</loc>
   <lastmod>2023-02-08T07:30:31+00:00</lastmod>
-  <priority>50</priority>
+  <priority>0.50</priority>
 </url>
 <url>
-  <loc>https://api.whatsapp.com/send/?phone=919709497053&text&type=phone_number&app_absent=0/loc>
+  <loc>https://api.whatsapp.com/send/?phone=919709497053&text&type=phone_number&app_absent=0</loc>
   <lastmod>2023-02-08T07:30:31+00:00</lastmod>
-  <priority>50</priority>
+  <priority>0.50</priority>
 </url><url>
   <loc>https://github.com/Rishu20</loc>
   <lastmod>2023-02-08T07:30:31+00:00</lastmod>
-  <priority>50</priority>
+  <priority>0.50</priority>
 </url>
 <url>
   <loc>https://www.linkedin.com/in/shushantrishav</loc>
   <lastmod>2023-02-08T07:30:31+00:00</lastmod>
-  <priority>50</priority>
+  <priority>0.50</priority>
 </url>
 
 
