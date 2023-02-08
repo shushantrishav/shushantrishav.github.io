@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="./Statics/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <script src="https://kit.fontawesome.com/b4a182c864.js" crossorigin="anonymous"></script>
-    
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -32,7 +34,8 @@
 
                 <li><a href="./resume.html"><i class="fa-sharp fa-regular fa-file-lines"></i> Resume</a></li>
                 <li><a href=".#contact"><i class="fa-solid fa-address-book"></i> Contact</a></li>
-                <li><a href="javascript:void(0);" onclick="toggleMute()"><i class="fa-solid fa-volume-xmark">&nbsp; Mute
+                <li><a href="javascript:void(0);" onclick="toggleMute()"><i onclick="change_text()" id="music"
+                            class="fa-solid fa-volume-xmark">&nbsp; Mute
                             Audio</i></a></li>
             </ul>
             <div class="icon menu-btn">
@@ -174,16 +177,28 @@
     </section>
     <section class="gallery">
         <div class="grid-container">
-            <div class="item"><div class="proj g1"></div></div>
-            <div class="item"><div class="proj g2"></div></div>
-            <div class="item"><div class="proj g3"></div></div>
+            <div class="item">
+                <div class="proj g1"></div>
+            </div>
+            <div class="item">
+                <div class="proj g2"></div>
+            </div>
+            <div class="item">
+                <div class="proj g3"></div>
+            </div>
 
         </div>
         <div class="grid-container">
-            <div class="item"><div class="proj g4"></div></div>
-            <div class="item"><div class="proj g5"></div></div>
-            <div class="item"><div class="proj g6"></div></div>
-            
+            <div class="item">
+                <div class="proj g4"></div>
+            </div>
+            <div class="item">
+                <div class="proj g5"></div>
+            </div>
+            <div class="item">
+                <div class="proj g6"></div>
+            </div>
+
         </div>
     </section>
     <section class="project" id="project">
@@ -255,7 +270,7 @@
                                     class="fa-brands fa-square-github"></i>&nbsp;Rishu20</a></li>
                         <li><a href="mailto:sushantrishav90@gmail.com" target="_blank"><i
                                     class="fa-solid fa-envelope"></i>&nbsp;sushantrishav90@gmail.com</a></li>
-                        <li><a href="bit.ly/wa_sr"
+                        <li><a href="https://api.whatsapp.com/send/?phone=919709497053&text&type=phone_number&app_absent=0"
                                 target="_blank"><i class="fa-brands fa-whatsapp"></i>&nbsp; Rishu</a></li>
                     </ul>
                 </div>
@@ -265,55 +280,55 @@
                         referrerpolicy="no-referrer-when-downgrade"></iframe></div>
             </div>
             <div class="right">
-                <form class="contact-form" method="GET" autocomplete="off" name="google-sheet">
+                <form id="myForm" autocomplete="off">
                     <div class="row">
                         <div class="col-25">
-                            <label for="fname">Name</label>
+                            <label>Name</label>
                         </div>
                         <div class="col-75">
-                            <input type="text" class="fullname" placeholder=" Name" name="Name">
 
+                            <input type="text" placeholder="Name..." name="Name" />
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-25">
-                            <label for="lname">Email</label>
+                            <label>Email</label>
                         </div>
                         <div class="col-75">
-                            <input type="email" class="email-input" placeholder=" Email" name="Email">
+                            <input type="email" placeholder="yourmail@email.com..." name="Email" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label>Subject</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" placeholder="Subject..." name="Subject" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label>Message</label>
+                        </div>
+                        <div class="col-75">
+                            <textarea name="Message" placeholder="Your Message goes here..."></textarea>
+                        </div>
+                    </div>
 
-                        </div>
+                </form>
+                <div class="row">
+                    <div class="sub">
+                        <button  onclick='SubForm()'>Submit</button>
                     </div>
-                    <div class="row">
-                        <div class="col-25">
-                            <label for="lname">Subject</label>
-                        </div>
-                        <div class="col-75">
-                            <input type="text" class="subject" placeholder=" Subject" name="Subject">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-25">
-                            <label for="subject">Message</label>
-                        </div>
-                        <div class="col-75">
-                            <textarea type='text' class="message" cols="30" rows="10" placeholder=" Your Message.."
-                                name="Message"></textarea>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="sub">
-                            <input class="send-msg btn_trasp" type="submit" onclick="notifyBar()" name="send"></button>
-                        </div>
-                    </div>
-                </form </div>
+                </div>
             </div>
     </section>
     <footer>
-        <small>&copy; Copyright 2023, <a href="mailto:sushantrishav90@gmail.com">Shushant Rishav</a>. All Rights Reserved.</small>
-      </footer>
+        <small>&copy; Copyright 2023, <a href="mailto:sushantrishav90@gmail.com">Shushant Rishav</a>. All Rights
+            Reserved.</small>
+    </footer>
     <script src="./Statics/Canvas.js"></script>
-    <script src="./Statics/script.js"></script>
+    <script src="./Statics/script.js" defer></script>
 </body>
 
 </html>
