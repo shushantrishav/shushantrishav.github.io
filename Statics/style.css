@@ -13,6 +13,7 @@ html {
   width: 100%;
   background: #000000;
   color: whitesmoke;
+  scroll-behavior: smooth;
 }
 /* 
 font-family: 'Finger Paint', cursive;
