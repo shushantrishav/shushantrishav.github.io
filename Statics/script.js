@@ -67,4 +67,6 @@ function SubForm (){
       alert("There was an error :(")
     }
   });
+   document.getElementById("myForm").reset();
+
 }
