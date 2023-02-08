@@ -66,7 +66,13 @@ function SubForm (){
     error: function(){
       alert("There was an error :(")
     }
+    
   });
+<<<<<<< Updated upstream
    document.getElementById("myForm").reset();
 
 }
+=======
+  document.getElementById("myForm").reset();
+}
+>>>>>>> Stashed changes
