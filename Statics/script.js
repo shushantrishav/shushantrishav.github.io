@@ -68,11 +68,6 @@ function SubForm (){
     }
     
   });
-<<<<<<< Updated upstream
-   document.getElementById("myForm").reset();
 
-}
-=======
   document.getElementById("myForm").reset();
 }
->>>>>>> Stashed changes
