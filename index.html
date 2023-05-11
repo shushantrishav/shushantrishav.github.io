@@ -1,74 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:url"
-        content="https://www.sushantrishav.live/index.html" />
-    <meta property="og:type" content="Porfolio" />
-    <meta property="og:title" content="ShushantRishav" />
-    <meta property="og:description" content="This is a personal website" />
-    <meta property="og:image:secure_url" content="https://www.sushantrishav.live/Statics/Images/snap.png" />
-    <title>Shushant Rishav</title>
-    <link rel="shortcut icon" href="./Statics/Images/Sr.png" />
-    <link rel="stylesheet" href="./Statics/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, intial-scale=1.0,minimum-scale=1, maximum-scale=1" />
+
+    <title>Rishu20</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/style_dark.css" id="theme-link">
+    <link rel="shortcut icon" href="./assets/images/rey-removebg-preview.png" />
     <script src="https://kit.fontawesome.com/b4a182c864.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"> </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
 </head>
 
 <body>
     <audio id="audio_playo24" autoplay loop>
-        <source src="./Statics/Images/theme.mp3" type="audio/mp3" />
+        <source src="./assets/images/theme.mp3" type="audio/mp3" />
     </audio>
-
-    <nav class="navbar">
-        <div class="nav-content">
-            <div class="logo">
-                <a href="#"><b>S</b>hushant<b>R</b>ishav</a>
-            </div>
-            <ul class="menu-list">
-                <div class="icon cancel-btn">
-                    <i class="fas fa-times"></i>
-                </div>
-                <li><a href=".#"><i class="fa-solid fa-house-user"></i> Home</a></li>
-                <li><a href=".#about"><i class="fa-regular fa-address-card"></i> About</a></li>
-                <li><a href=".#project"><i class="fa-solid fa-briefcase"></i> My Works</a></li>
-
-                <li><a href="./resume.html"><i class="fa-sharp fa-regular fa-file-lines"></i> Resume</a></li>
-                <li><a href=".#contact"><i class="fa-solid fa-address-book"></i> Contact</a></li>
-                <li><a href="javascript:void(0);" onclick="toggleMute()"><i onclick="change_text()" id="music"
-                            class="fa-solid fa-volume-xmark">&nbsp; Mute
-                            Audio</i></a></li>
-            </ul>
-            <div class="icon menu-btn">
-                <i class="fa-solid fa-bars"></i>
-            </div>
+    <!--navigation------------------------->
+    <nav id='navbar'>
+        <!--logo-->
+        <div onclick="window.open('#','_self')" class="logo" alt='home' title="Home">
+            <b>S</b>huhsnat<b>R</b>ishav
         </div>
+        <!--menu-->
+        <ul>
+            <li><a href="#about" onclick="toggle_close()">About</a></li>
+            <li><a href="#project" onclick="toggle_close()">Project</a></li>
+            <li><a href="#contact" onclick="toggle_close()">Contact</a></li>
+            <li><a href="#gallery" onclick="toggle_close()">Gallery</a></li>
+            <li><a href="#resume" onclick="toggle_close()">Resume</a></li>
+            <li><a href="javascript:void(0);" onclick="toggleMute()"><i id="audio_icon" class="fas fa-volume-up"></i></a></li>
+            <span></span>
+
+        </ul>
+
+        <!--bars--------------->
+        <div class="toggle"></div>
     </nav>
 
+
+    <!-- Banner -->
     <section class="banner">
+        <canvas id="canvas" class="canvas"></canvas>
         <div id="box">
-            <div id="part">
-                <h2 class="alpha" id="alpha">H</h2>
+            <div id="part" class="part-1">
+                <h2 class="alpha" id="alpha">W</h2>
                 <h2 class="alpha" id="alpha">e</h2>
                 <h2 class="alpha" id="alpha">l</h2>
-                <h2 class="alpha" id="alpha">l</h2>
+                <h2 class="alpha" id="alpha">c</h2>
+                <h2 class="alpha" id="alpha">o</h2>
+                <h2 class="alpha" id="alpha">m</h2>
+                <h2 class="alpha" id="alpha">e</h2>
+                <h2 class="alpha" id="alpha">&nbsp;</h2>
+                <h2 class="alpha" id="alpha">t</h2>
                 <h2 class="alpha" id="alpha">o</h2>
                 <h2 class="alpha" id="alpha">,</h2>
+                <h2 class="alpha" id="alpha">&nbsp;</h2>
             </div>
-
-            <div id="part">
-
-
-                <h2 class="alpha" id="alpha">I</h2>
-                <h2 class="alpha" id="alpha">'</h2>
-                <h2 class="alpha" id="alpha">m</h2>
-                <h2 class="alpha" id="alpha"> &nbsp;</h2>
-
+            <div id="part" class="part-2">
+                <h2 class="alpha" id="alpha">o</h2>
+                <h2 class="alpha" id="alpha">n</h2>
+                <h2 class="alpha" id="alpha">l</h2>
+                <h2 class="alpha" id="alpha">i</h2>
+                <h2 class="alpha" id="alpha">n</h2>
+                <h2 class="alpha" id="alpha">e</h2>
+                <h2 class="alpha" id="alpha">&nbsp;</h2>
+                <h2 class="alpha" id="alpha">w</h2>
+                <h2 class="alpha" id="alpha">o</h2>
+                <h2 class="alpha" id="alpha">r</h2>
+                <h2 class="alpha" id="alpha">l</h2>
+                <h2 class="alpha" id="alpha">d</h2>
+                <h2 class="alpha" id="alpha">&nbsp;</h2>
+                <h2 class="alpha" id="alpha">o</h2>
+                <h2 class="alpha" id="alpha">f</h2>
+                <h2 class="alpha" id="alpha">&nbsp;</h2>
+            </div>
+            <div id="part" class="part-3">
                 <h2 class="alpha" id="alpha">S</h2>
                 <h2 class="alpha" id="alpha">h</h2>
                 <h2 class="alpha" id="alpha">u</h2>
@@ -77,264 +94,277 @@
                 <h2 class="alpha" id="alpha">a</h2>
                 <h2 class="alpha" id="alpha">n</h2>
                 <h2 class="alpha" id="alpha">t</h2>
-            </div>
-            <div id="part">
-
-
-                <h2 class="alpha" id="alpha">W</h2>
-                <h2 class="alpha" id="alpha">e</h2>
-                <h2 class="alpha" id="alpha">l</h2>
-                <h2 class="alpha" id="alpha">c</h2>
-                <h2 class="alpha" id="alpha">o</h2>
-                <h2 class="alpha" id="alpha">m</h2>
-                <h2 class="alpha" id="alpha">e</h2>
-                <h2 class="alpha" id="alpha"> &nbsp;</h2>
-
-                <h2 class="alpha" id="alpha">T</h2>
-                <h2 class="alpha" id="alpha">o</h2>
-                <h2 class="alpha" id="alpha"> &nbsp;</h2>
-
-                <h2 class="alpha" id="alpha">M</h2>
-                <h2 class="alpha" id="alpha">y</h2>
-                <h2 class="alpha" id="alpha"> &nbsp;</h2>
-
-                <h2 class="alpha" id="alpha">W</h2>
-                <h2 class="alpha" id="alpha">e</h2>
-                <h2 class="alpha" id="alpha">b</h2>
-                <h2 class="alpha" id="alpha">s</h2>
+                <h2 class="alpha" id="alpha">&nbsp;</h2>
+                <h2 class="alpha" id="alpha">R</h2>
                 <h2 class="alpha" id="alpha">i</h2>
-                <h2 class="alpha" id="alpha">t</h2>
-                <h2 class="alpha" id="alpha">e</h2>
+                <h2 class="alpha" id="alpha">s</h2>
+                <h2 class="alpha" id="alpha">h</h2>
+                <h2 class="alpha" id="alpha">a</h2>
+                <h2 class="alpha" id="alpha">v</h2>
+            </div>
+
+        </div>
+        <div class="bottom">
+            <!-- <h2 class="alpha" id="alpha"><i class="fa-solid fa-angle-down"></i></h2> -->
+            <p class="left">&larr; slide down</p>
+            <p class="right">slide down &rarr; </p>
+
+        </div>
+        </div>
+
+
+    </section>
+    <!-- banner -->
+
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="image">
+                <img src="./assets/images/model.jpg" alt="">
+            </div>
+            <div class="text">
+                <p>Hi, I'm Shushant Rishav. I have persued my B-Tech in CSE from Dayananda Sagar University in
+                    Bangalore. I also have experience in machine learning, data science, and various programming
+                    languages
+                    such as Python, Django, and C.
+                    <br> <br>
+
+                    Apart from my education, I have worked as a freelance animated ad creator for 18 months with Fiverr
+                    and
+                    volunteered as a team lead for technical assistance during the NASA Space Apps Challenge. I have
+                    also
+                    completed several certifications, including IT Automation with Python and Machine Learning on Google
+                    Cloud. In my free time, I enjoy working on various projects, such as a gender detection model and a
+                    machine-learning algorithm for malware prediction.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="skills">
+        <div class="text">
+            <p>I possess a diverse range of skills that make me an excellent fit for any team. With a strong background
+                in programming languages like Python, C, and JavaScript, I am also experienced in web development using
+                React-JS, HTML, CSS, and SCSS. In addition, I have expertise in Machine Learning, Data Science, and
+                Django, along with experience working in a Linux environment. I have also worked on cloud computing
+                platforms like AWS and GCP. <br><br>
+                With these skills, I have completed various projects, including a Gender
+                Detection Model, a Malware Prediction Algorithm, and a Word Cloud app, among others. My commitment to
+                continuous learning and development of my skills makes me an asset to any team.</p>
+        </div>
+        <div class="map">
+            <div class="globe">
+                <span class="cloud"></span>
             </div>
         </div>
         <div class="bottom">
-            <h2 class="alpha" id="alpha"><i class="fa-solid fa-angle-down"></i></h2>
-        </div>
-        <canvas id="canvas" class="canvas"></canvas>
+            <p class="left">&larr; slide down</p>
+            <p class="right">slide down &rarr; </p>
 
+        </div>
     </section>
-    <section class="about" id="about">
-        <div class="title">
-            <h1>About Me</h1>
-        </div>
-        <div class="content">
 
-            <div class="abt-img">
-                <div class="img"></div>
+
+    <section class="project" id="project">
+        <div class="container">
+            <h1>Projects</h1>
+            <div class="slider-container">
+                <div class="owl-carousel">
+                    <div class='itm-wrapper'><img src="./assets/Images/Project1.png" alt="">
+                        <h2> Blackarch </h2>
+                        <p> BlackArch-Linux is now available for WSL 2 on Windows 10 2004 and later versions. With this,
+                            users can access over 2500 penetration testing tools on a Windows machine without the need
+                            for a virtual machine. The installation process is straightforward, and users can use the
+                            Linux terminal to install and run their favorite tools. This provides a convenient way for
+                            users to access BlackArch-Linux on their Windows machines for penetration testing and
+                            security research purposes.</p>
+                    </div>
+                    <div class='itm-wrapper'><img src="./assets/Images/Project2.jpg" alt="">
+                        <h2> Covid Tracking </h2>
+                        <p> This project visualize COVID-19 case data using Python, Dash, and Plotly. It provides
+                            step-by-step instructions for fetching and organizing daily COVID-19 cases data for India
+                            using the Pandas library, and developing a short-term prediction model using linear
+                            regression.
+                            The tutorial then demonstrates how to create interactive visualizations using Dash and
+                            Plotly, allowing users to explore and analyze the data.
+                        </p>
+                    </div>
+                    <div class='itm-wrapper'><img src="./assets/Images/Project3.png" alt="">
+                        <h2> Covid Prediction </h2>
+                        <p> The COVID-19 prediction model for India fetches daily cases data from CSSEGISandData and
+                            uses Pandas to store it in a tidy CSV file. Using linear regression, the project develops a
+                            short-term prediction model that uses the "Day" column as the independent variable and the
+                            "CumConfirmed" column as the dependent variable. The model's accuracy may be affected by
+                            changing testing protocols, vaccination rates, and government policies. Nonetheless, the
+                            project is a useful tool for analyzing COVID-19 data and making predictions for India.</p>
+                    </div>
+                    <div class='itm-wrapper'><img src="./assets/Images/project4.png" alt="">
+                        <h2> WordCloud </h2>
+                        <p>
+                            A word cloud is a visual representation of text data where the size of each word indicates
+                            its frequency or importance. It can be used for exploratory data analysis, text mining, and
+                            data visualization. Word clouds summarize text data, identify themes and patterns, visualize
+                            sentiment and emotions, and enhance presentations and reports. They provide a quick and
+                            intuitive understanding of text data, which can inform decision-making, gain insights, and
+                            communicate effectively with different stakeholders.</p>
+                    </div>
+                    <div class='itm-wrapper'><img src="./assets/Images/Project6.png" alt="">
+                        <h2> Malware Prediction </h2>
+                        <p> This project aims to develop a machine learning model to predict the likelihood of malware
+                            attack based on hardware configuration of a given machine. The results indicate the specific
+                            machine configuration most vulnerable to malware. However, due to a lack of recent data, the
+                            results cannot provide information on vulnerabilities to newer Windows variants. The
+                            algorithm involves data classification, sorting, visualization, and model training. Future
+                            work could expand on different datasets and attributes for machine learning algorithms.</p>
+                    </div>
+                    <div class='itm-wrapper'><img src="./assets/Images/Project7.png" alt="">
+                        <h2> NewsSelect </h2>
+                        <p>
+                            This project uses deep learning models to build a text summarization tool that can
+                            accurately generate one or two-sentence summaries for news articles. The dataset is
+                            preprocessed, cleaned, and tokenized before being trained using the encoder-decoder
+                            architecture with attention. The resulting model is saved and deployed using Django, with
+                            real-time articles procured from reputable news portals. Users can read personalized news
+                            summaries from their preferred news sources on a web application that features a frontend
+                            filter component.</p>
+                    </div>
+                </div>
             </div>
-            <div class="abt-container">
-                <div class="abt-text">
-                    <p align="justify"> I'm a Programmer/Developer located in India. I have a serious passion for
-                        Python,Data Science,
-                        AI and Front-End Development.
-                        Well-organised person, problem solver, programmer with high attention to detail. Fan of TV
-                        series and literature.
-                        Interested in the entire python development spectrum.
+            <div class="inside-container">
+                <div class="items p1">
+                    <h2> Blackarch </h2>
+                    <p> BlackArch-Linux is now available for WSL 2 on Windows 10 2004 and later versions. With this,
+                        users can access over 2500 penetration testing tools on a Windows machine without the need
+                        for a virtual machine. The installation process is straightforward, and users can use the
+                        Linux terminal to install and run their favorite tools. This provides a convenient way for
+                        users to access BlackArch-Linux on their Windows machines for penetration testing and
+                        security research purposes.</p>
+                </div>
+                <div class="items p2">
+                    <h2> Covid Tracking </h2>
+                    <p> This project visualize COVID-19 case data using Python, Dash, and Plotly. It provides
+                        step-by-step instructions for fetching and organizing daily COVID-19 cases data for India
+                        using the Pandas library, and developing a short-term prediction model using linear
+                        regression.
+                        The tutorial then demonstrates how to create interactive visualizations using Dash and
+                        Plotly, allowing users to explore and analyze the data.
                     </p>
                 </div>
-            </div>
-        </div>
-    </section>
-    <section class="my-skills">
-        <div class="left">
-            <div class="title">
-                <h1>Skills And Experience </h1>
-            </div>
-            <p align="justify">I'm a student of Dayananda Sagar University and I recognise myself as a developer. I've
-                completed some
-                very good projects in python and Data Science which includes an short term covid-19 prediction webapp
-                and an api for word frequency count on algorithmia. Apart from that, I've created successful responsive
-                websites, and apps based on the Django framework. The main area of my interest is python development,
-                Data Science, HTML, CSS, JS, building small and medium web apps, Machine Learning models, and
-                animations. I am also good at working with Linux machines I have deployed two linux images for the WSL
-            </p>
-        </div>
-        <div class="right">
-            <div class="skills-container ">
-
-                <p align="justify">Python</p>
-                <div class="container">
-                    <div class="skills python"></div>
+                <div class="items p3">
+                    <h2> Covid Prediction </h2>
+                    <p> The COVID-19 prediction model for India fetches daily cases data from CSSEGISandData and
+                        uses Pandas to store it in a tidy CSV file. Using linear regression, the project develops a
+                        short-term prediction model that uses the "Day" column as the independent variable and the
+                        "CumConfirmed" column as the dependent variable. The model's accuracy may be affected by
+                        changing testing protocols, vaccination rates, and government policies. Nonetheless, the
+                        project is a useful tool for analyzing COVID-19 data and making predictions for India.</p>
+                </div>
+                <div class="items p4">
+                    <h2> WordCloud </h2>
+                    <p>
+                        A word cloud is a visual representation of text data where the size of each word indicates
+                        its frequency or importance. It can be used for exploratory data analysis, text mining, and
+                        data visualization. Word clouds summarize text data, identify themes and patterns, visualize
+                        sentiment and emotions, and enhance presentations and reports. They provide a quick and
+                        intuitive understanding of text data, which can inform decision-making, gain insights, and
+                        communicate effectively with different stakeholders.</p>
+                </div>
+                <div class="items p6">
+                    <h2> Malware Prediction </h2>
+                    <p> This project aims to develop a machine learning model to predict the likelihood of malware
+                        attack based on hardware configuration of a given machine. The results indicate the specific
+                        machine configuration most vulnerable to malware. However, due to a lack of recent data, the
+                        results cannot provide information on vulnerabilities to newer Windows variants. The
+                        algorithm involves data classification, sorting, visualization, and model training. Future
+                        work could expand on different datasets and attributes for machine learning algorithms.</p>
+                </div>
+                <div class="items p7">
+                    <h2> NewsSelect </h2>
+                    <p>
+                        This project uses deep learning models to build a text summarization tool that can
+                        accurately generate one or two-sentence summaries for news articles. The dataset is
+                        preprocessed, cleaned, and tokenized before being trained using the encoder-decoder
+                        architecture with attention. The resulting model is saved and deployed using Django, with
+                        real-time articles procured from reputable news portals. Users can read personalized news
+                        summaries from their preferred news sources on a web application that features a frontend
+                        filter component.</p>
                 </div>
 
-                <p align="justify">Data Science</p>
-                <div class="container">
-                    <div class="skills data-science"></div>
-                </div>
 
-                <p align="justify">Django</p>
-                <div class="container">
-                    <div class="skills django"></div>
-                </div>
-                <p align="justify">Linux</p>
-                <div class="container">
-                    <div class="skills linux"></div>
-                </div>
-                <p align="justify">HTML/CSS/JS</p>
-                <div class="container">
-                    <div class="skills html"></div>
-                </div>
-                <p align="justify">C</p>
-                <div class="container">
-                    <div class="skills C"></div>
-                </div>
             </div>
         </div>
-    </section>
-    <section class="gallery">
-        <div class="grid-container">
-            <div class="item">
-                <div class="proj g1"></div>
-            </div>
-            <div class="item">
-                <div class="proj g2"></div>
-            </div>
-            <div class="item">
-                <div class="proj g3"></div>
-            </div>
-
-        </div>
-        <div class="grid-container">
-            <div class="item">
-                <div class="proj g4"></div>
-            </div>
-            <div class="item">
-                <div class="proj g5"></div>
-            </div>
-            <div class="item">
-                <div class="proj g6"></div>
-            </div>
-
-        </div>
-    </section>
-    <section class="project" id="project">
-        <div class="title">
-            <h1>My Works</h1>
-        </div>
-        <div class="grid-container">
-            <div class="item">
-                <div class="proj proj1"
-                    onclick="window.open('https://www.sushantrishav.live/Blackarchwsl/','target blank')">
-                    <h1>Blackarch_wsl</h1>
-                    <p align="justify">Blackarch_wsl for WSL2 (windows 10 2004 or later) using wsldl</p>
-                </div>
-            </div>
-            <div class="item ">
-                <div class="proj proj2"
-                    onclick="window.open('https://www.sushantrishav.live/Covid_tracker/','target blank')">
-                    <h1>Covid Tracker</h1>
-                    <p align="justify">A Dash Based Web-App to Track Covid19 Cases.(Guided Project)</p>
-                </div>
-            </div>
-            <div class="item ">
-                <div class="proj proj3"
-                    onclick="window.open('https://www.sushantrishav.live/covid_prediction/','target blank')">
-                    <h1>Covid_Prediction</h1>
-                    <p align="justify"> A Fully Automated Django based short-term covid19-India Prediction App</p>
-                </div>
-            </div>
-        </div>
-        <div class="grid-container">
-            <div class="item ">
-                <div class="proj proj4"
-                    onclick="window.open('https://www.sushantrishav.live/word_cloud/','target blank')">
-                    <h1>Word_Cloud app</h1>
-                    <p align="justify">A django based web app to process text-file into word cloud.</p>
-                </div>
-            </div>
-            <div class="item ">
-                <div class="proj proj5"
-                    onclick="window.open('https://algorithmia.com/algorithms/rishu/Words_Frequency_Counter','target blank')">
-                    <h1>Words_Frequency_Counter</h1>
-                    <p align="justify">This Algorithm is used to count frequency of words in a text file.</p>
-                </div>
-            </div>
-            <div class="item ">
-                <div class="proj proj6">
-                    <h1>Microsoft-Malware-Prediction</h1>
-                    <p align="justify">This project, is a machine learning model to predict,
-                        probable hit of malware on a system depending on its configuration.</p>
-                </div>
-            </div>
-        </div>
+        <div class="bottom">
+            <p class="left">&larr; slide down</p>
+            <p class="right">slide down &rarr; </p>
 
         </div>
     </section>
     <section class="contact" id="contact">
-        <div class="title">
-            <h1>Contact</h1>
-        </div>
-        <div class="contact_container">
+        <h1> Contact</h1>
+        <div class="container">
             <div class="left">
-                <div class="ct-top">
-                    <ul>
-                        <li><a href="https://twitter.com/ShushantRishav" target="_blank"><i
-                                    class="fa-brands fa-twitter"></i>&nbsp;@ShushantRishav</a></li>
-                        <li><a href="https://www.linkedin.com/in/shushantrishav/" target="_blank"><i
-                                    class="fa-brands fa-linkedin"></i>&nbsp;Shushant Rishav</a></li>
-                        <li><a href="https://github.com/Rishu20" target="_blank"><i
-                                    class="fa-brands fa-square-github"></i>&nbsp;Rishu20</a></li>
-                        <li><a href="mailto:sushantrishav90@gmail.com" target="_blank"><i
-                                    class="fa-solid fa-envelope"></i>&nbsp;sushantrishav90@gmail.com</a></li>
-                        <li><a href="https://api.whatsapp.com/send/?phone=919709497053&text&type=phone_number&app_absent=0"
-                                target="_blank"><i class="fa-brands fa-whatsapp"></i>&nbsp; Rishu</a></li>
-                    </ul>
+                <ul class="soc">
+                    <a href="https://github.com/Rishu20" target="_blank" ><li><i class="fab fa-github"></i>&nbsp; &nbsp;<p>Github : Rishu20</p></li></a>
+                    <a href="https://www.linkedin.com/in/shushantrishav/" target="_blank" ><li><i class="fab fa-linkedin"></i>&nbsp; &nbsp;<p>Linkedin : ShushantRishav</p></li></a>
+                    <a href="https://www.facebook.com/ShushantRishav/" target="_blank"><li><i class="fa-brands fa-square-facebook"></i>&nbsp; &nbsp;<p>Facebook : ShushantRishav</p></li></a>
+                    <a href="https://twitter.com/rishavshushant" target="_blank"><li><i class="fab fa-twitter"></i>&nbsp; &nbsp;<p> Twitter : rishavshushant</p></li></a>
+                    <a href="mailto:sushantrishav90@gmail.com" target="_blank"><li><i class="fas fa-envelope"></i>&nbsp; &nbsp;<p>Mail : sushantrishav90</p></li></a>
+                </ul>
+                <div class="frame">
+                <iframe src="https://www.google.com/maps/embed?&amp;output=dark&amp;pb=!1m18!1m12!1m3!1d248849.9011134956!2d77.46578532248887!3d12.953945399744374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1683836320186!5m2!1sen!2sin" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <div class="ct-bottom"><iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d62228.310402037285!2d77.64214649999998!3d12.890390899999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1675827443130!5m2!1sen!2sin"
-                        style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe></div>
             </div>
             <div class="right">
-                <form id="myForm" autocomplete="off">
-                    <div class="row">
-                        <div class="col-25">
-                            <label>Name</label>
-                        </div>
-                        <div class="col-75">
+                <form action="" method="post" class="form">
+                    <div class="field">
+                        <label for="Name">Name: </label>
+                        <input type="text" name="Name" placeholder="Name" id="">
 
-                            <input type="text" placeholder="Name..." name="Name" />
-                        </div>
                     </div>
-                    <div class="row">
-                        <div class="col-25">
-                            <label>Email</label>
-                        </div>
-                        <div class="col-75">
-                            <input type="email" placeholder="yourmail@email.com..." name="Email" />
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-25">
-                            <label>Subject</label>
-                        </div>
-                        <div class="col-75">
-                            <input type="text" placeholder="Subject..." name="Subject" />
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-25">
-                            <label>Message</label>
-                        </div>
-                        <div class="col-75">
-                            <textarea name="Message" placeholder="Your Message goes here..."></textarea>
-                        </div>
-                    </div>
+                    <div class="field">
+                        <label for="Email">Email: </label>
+                        <input type="email" name="Email" placeholder="Email" id="">
 
+                    </div>
+                    <div class="field">
+                        <label for="Subject">Subject: </label>
+                        <input type="text" name="Subject" placeholder="Subject" id="">
+
+                    </div>
+                    <div class="field">
+                        <label for="Message"> Message: </label>
+                        <textarea type="text" name="Message" id="" placeholder="Message" class="message"></textarea>
+
+                    </div>
+                    <button>Submit</button>
                 </form>
-                <div class="row">
-                    <div class="sub">
-                        <button onclick='SubForm()'>Submit</button>
-                    </div>
-                </div>
+                
+                <footer>
+                    <p><b>&copy;</b> 2023 Shushant Rishav. All Rights Reserved.</p>
+                </footer>
             </div>
+            
+        </div>
     </section>
-    <footer>
-        <small>&copy; Copyright 2023, <a href="mailto:sushantrishav90@gmail.com">Shushant Rishav</a>. All Rights
-            Reserved.</small>
-    </footer>
-    <script src="./Statics/Canvas.js"></script>
-    <script src="./Statics/script.js" defer></script>
+    <!--social-attach-bar-->
+    <div class="social">
+
+        <div onclick="window.open('https://github.com/Rishu20','target blank')"><i class="fab fa-github"></i></div>
+        <div onclick="window.open('https://twitter.com/rishavshushant','target blank')"><i class="fab fa-twitter"></i>
+        </div>
+        <div class="btn btn-toggle" onclick="imagefun()"><i class="fas fa-moon btn-toggle"></i></div>
+        <div onclick="window.open('mailto:sushantrishav90@gmail.com')" title="mail"><i class="fas fa-envelope"></i>
+        </div>
+        <div onclick="window.open('https://www.linkedin.com/in/shushantrishav/','target blank',)"><i
+                class="fab fa-linkedin"></i></div>
+    </div>
+    
+
+    <script src="./assets/js/carousel.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/Canvas.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <style>
+        body {
+            background: #000;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="owl-carousel slider container">
+        <div class='itm-wrapper'><img src="https://place-hold.it/300x500/000/fff.png/000" alt=""></div>
+        <div class='itm-wrapper'><img src="https://place-hold.it/300x500/ccc/fff.png/000" alt=""></div>
+        <div class='itm-wrapper'><img src="https://place-hold.it/300x500/f00/fff.png/000" alt=""></div>
+        <div class='itm-wrapper'><img src="https://place-hold.it/300x500/333/fff.png/000" alt=""></div>
+        <div class='itm-wrapper'><img src="https://place-hold.it/300x500/012345/fff.png/000" alt=""></div>
+        <div class='itm-wrapper'><img src="https://place-hold.it/300x500/009988/fff.png/000" alt=""></div>
+        <div class='itm-wrapper'><img src="https://place-hold.it/300x500/ff00ff/fff.png/000" alt=""></div>
+    </div>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            margin: -100,
+            autoplay: true,
+            center: false,
+            loop: true,
+            nav: true,
+            dots: true,
+            // stagePadding: 60,
+            onInitialized: owlInit,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 3,
+                },
+                600: {
+                    items: 3,
+                },
+                1000: {
+                    items: 3,
+                }
+            }
+        });
+
+        $('.owl-carousel').on('initialize.owl.carousel initialized.owl.carousel translate.owl.carousel changed.owl.carousel', function (e) {
+            idx = e.item.index;
+            $('.owl-item.big').removeClass('big');
+            // $('.owl-item.medium').removeClass('medium');
+            $('.owl-item').eq(idx + 1).addClass('big');
+            // $('.owl-item.big').eq(idx - 1).addClass('medium');
+            // $('.owl-item').eq(idx + 1).addClass('medium');
+        });
+
+        function owlInit() {
+            $('.owl-carousel .owl-item:eq(1)').addClass('big');
+        }
+
+        $('.owl-carousel .itm-wrapper').each(function (index) {
+            $(this).attr('data-position', index); // NB: .attr() instead of .data()
+        });
+        $(document).on('click', '.owl-item.active', function () {
+            var $speed = 300;  // in ms
+            $('.owl-carousel').trigger('to.owl.carousel', [$(this).find('.itm-wrapper').data('position'), $speed]);
+        });
+    </script>
+</body>
+
+</html>
