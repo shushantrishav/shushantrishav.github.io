@@ -31,13 +31,15 @@ li {
 }
 .resume .left .image {
   background: black;
-  background-image: url("../images/model.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
   border: 10px double white;
-  height: 250px;
+  height: 500px;
   width: 100%;
+  padding: 10px;
   box-shadow: 2px 5px 10px black;
+}
+.resume .left .image img{
+height: 100%;
+width: 100%;
 }
 .resume .left .about-res {
   height: 240px;
