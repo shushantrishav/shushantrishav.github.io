@@ -23,7 +23,7 @@ html{
 }
 
 .four_zero_four_bg {
-  background-image: url(./Images/dribbble_1.gif);
+  background-image: url(../images/funny-404-error-page-design.gif);
   background-repeat: no-repeat;
   height: 400px;
   background-position: center;
@@ -38,38 +38,19 @@ html{
   padding: 10px;
 }
 button{
-  box-shadow: 1px 1px 2px 2px black;
+  width: 250px;
+  border: 3px solid black;
+  box-shadow: 1px 1px 20px 2px black;
   border-radius: 5px;
   text-decoration: none;
   font-size: 30px;
   text-align: center;
   padding: 5px;
-  background: -webkit-linear-gradient(
-    55deg,
-    hsl(250deg 100% 50%) 0%,
-    hsl(260deg 100% 50%) 10%,
-    hsl(266deg 100% 50%) 17%,
-    hsl(271deg 100% 50%) 22%,
-    hsl(276deg 100% 50%) 27%,
-    hsl(280deg 100% 50%) 31%,
-    hsl(284deg 100% 50%) 35%,
-    hsl(287deg 100% 50%) 39%,
-    hsl(291deg 100% 50%) 42%,
-    hsl(294deg 100% 50%) 46%,
-    hsl(297deg 100% 50%) 49%,
-    hsl(300deg 100% 50%) 53%,
-    hsl(305deg 100% 50%) 56%,
-    hsl(311deg 100% 50%) 59%,
-    hsl(316deg 100% 50%) 63%,
-    hsl(322deg 100% 50%) 66%,
-    hsl(327deg 100% 50%) 70%,
-    hsl(332deg 100% 50%) 74%,
-    hsl(337deg 100% 50%) 78%,
-    hsl(342deg 100% 50%) 82%,
-    hsl(347deg 100% 50%) 87%,
-    hsl(352deg 100% 50%) 92%,
-    hsl(0deg 100% 50%) 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+}
+button:hover{
+  width: 250px;
+  background: black;
+  color: #fff;
+  border: 3px solid #fff;
+
 }
