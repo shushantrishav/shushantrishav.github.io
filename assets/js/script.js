@@ -55,18 +55,17 @@ function toggleMute() {
 }
 
 
-function SubForm() {
+function SubForm (){
   $.ajax({
-    url: "https://api.apispreadsheets.com/data/J052l0u8EtGWGmns/",
-    type: "POST",
-    data: $("#myForm").serializeArray(),
-    success: function () {
-      alert("Form Data Submitted :)");
+    url:"https://api.apispreadsheets.com/data/TI9POZvvjpBfQW1t/",
+    type:"post",
+    data:$("#myForm").serializeArray(),
+    success: function(){
+      alert("Form Data Submitted")
+      $("#myForm")[0].reset()
     },
-    error: function () {
-      alert("There was an error :(");
-    },
+    error: function(){
+      alert("There was an error :(")
+    }
   });
-
-  document.getElementById("myForm").reset();
 }
