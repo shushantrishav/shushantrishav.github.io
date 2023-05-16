@@ -1,62 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
-    <link rel="stylesheet" href="./Statics/style.css">
-    <link rel="shortcut icon" href="./Statics/Images/resume.png" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, intial-scale=1.0,minimum-scale=1, maximum-scale=1" />
+
+    <title>Rishu20</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/style.css" id="theme-link">
+    <link rel="shortcut icon" href="./assets/images/rey-removebg-preview.png" />
     <script src="https://kit.fontawesome.com/b4a182c864.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"> </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+        <script src="./assets/js/jquery.svg3dtagcloud.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
 </head>
 
 <body>
     <audio id="audio_playo24" autoplay loop>
-        <source src="./Statics/Images/theme.mp3" type="audio/mp3" />
+        <source src="./assets/images/theme.mp3" type="audio/mp3" />
     </audio>
-    <nav class="navbar">
-        <div class="nav-content">
-            <div class="logo">
-                <a href="./index.html"><b>S</b>hushant<b>R</b>ishav</a>
-            </div>
-            <ul class="menu-list">
-                <div class="icon cancel-btn">
-                    <i class="fas fa-times"></i>
-                </div>
-                <li><a href="./#"><i class="fa-solid fa-house-user"></i> Home</a></li>
-                <li><a href="./#about"><i class="fa-regular fa-address-card"></i> About</a></li>
-                <li><a href="./#project"><i class="fa-solid fa-briefcase"></i> My Works</a></li>
-
-                <li><a href="./resume.html"><i class="fa-sharp fa-regular fa-file-lines"></i> Resume</a></li>
-                <li><a href="./#contact"><i class="fa-solid fa-address-book"></i> Contact</a></li>
-                <li><a href="javascript:void(0);" onclick="toggleMute()"><i onclick="change_text()" id="music"
-                            class="fa-solid fa-volume-xmark">&nbsp; Mute
-                            Audio</i></a></li>
-            </ul>
-            <div class="icon menu-btn">
-                <i class="fas fa-bars"></i>
-            </div>
+    <!--navigation------------------------->
+    <nav id='navbar'>
+        <!--logo-->
+        <div onclick="window.open('#','_self')" class="logo" alt='home' title="Home">
+            <b>S</b>huhsnat<b>R</b>ishav
         </div>
+        <!--menu-->
+        <ul>
+            <li><a href="#about" onclick="toggle_close()">About</a></li>
+            <li><a href="#project" onclick="toggle_close()">Project</a></li>
+            <li><a href="#contact" onclick="toggle_close()">Contact</a></li>
+            <li><a href="#gallery" onclick="toggle_close()">Gallery</a></li>
+            <li><a href="./resume.html" onclick="toggle_close()">Resume</a></li>
+            <li><a href="javascript:void(0);" onclick="toggleMute()"><i id="audio_icon" class="fas fa-volume-up"></i></a></li>
+            <span></span>
+
+        </ul>
+
+        <!--bars--------------->
+        <div class="toggle"></div>
     </nav>
 
+
+    <!-- Banner -->
     <section class="resume" id="resume">
-        <div class="resu">
-            <div class="vis">
-                <img src="./Statics/Images/resume_1.png" alt="" srcset="">
-                <img src="./Statics/Images/resume_2.png" alt="" srcset="">
-
-            </div>
-        </div>
-
+        <div class="container">
+        <img src="./assets/images/resume_1.png" alt="resume_1" srcset="">
+        <img src="./assets/images/resume_2.png" alt="resume_2" srcset="">
+</div>
     </section>
-    <footer>
-        <small>&copy; Copyright 2023, <a href="">Shushant Rishav</a>. All Rights Reserved.</small>
-    </footer>
-    <script src="./Statics/Canvas.js"></script>
-    <script src="./Statics/script.js"></script>
+    <!--social-attach-bar-->
+    <div class="social">
+
+        <div onclick="window.open('https://github.com/Rishu20','target blank')"><i class="fab fa-github"></i></div>
+        <div onclick="window.open('https://twitter.com/rishavshushant','target blank')"><i class="fab fa-twitter"></i>
+        </div>
+        <div class="btn btn-toggle" onclick="imagefun()"><i class="fas fa-moon btn-toggle"></i></div>
+        <div onclick="window.open('mailto:sushantrishav90@gmail.com')" title="mail"><i class="fas fa-envelope"></i>
+        </div>
+        <div onclick="window.open('https://www.linkedin.com/in/shushantrishav/','target blank',)"><i
+                class="fab fa-linkedin"></i></div>
+    </div>
+    
+<script src="./assets/js/main.js"></script>
+    <script src="./assets/js/carousel.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/Canvas.js"></script>
 </body>
 
 </html>

@@ -977,6 +977,52 @@ footer {
 footer b {
   font-size: 1.8em;
 }
+.resume{
+  margin: 0;
+  height: fit-content;
+}
+.resume .container{
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  border-radius: 3px;
+  background: -webkit-linear-gradient(
+    55deg,
+    hsl(250deg 100% 50%) 0%,
+    hsl(260deg 100% 50%) 10%,
+    hsl(266deg 100% 50%) 17%,
+    hsl(271deg 100% 50%) 22%,
+    hsl(276deg 100% 50%) 27%,
+    hsl(280deg 100% 50%) 31%,
+    hsl(284deg 100% 50%) 35%,
+    hsl(287deg 100% 50%) 39%,
+    hsl(291deg 100% 50%) 42%,
+    hsl(294deg 100% 50%) 46%,
+    hsl(297deg 100% 50%) 49%,
+    hsl(300deg 100% 50%) 53%,
+    hsl(305deg 100% 50%) 56%,
+    hsl(311deg 100% 50%) 59%,
+    hsl(316deg 100% 50%) 63%,
+    hsl(322deg 100% 50%) 66%,
+    hsl(327deg 100% 50%) 70%,
+    hsl(332deg 100% 50%) 74%,
+    hsl(337deg 100% 50%) 78%,
+    hsl(342deg 100% 50%) 82%,
+    hsl(347deg 100% 50%) 87%,
+    hsl(352deg 100% 50%) 92%,
+    hsl(0deg 100% 50%) 100%
+  );
+}
+.resume .container img{
+  height: 100%;
+  width: 100%;
+
+}
 /* responsive section */
 @media screen and (max-width: 1250px) {
   .about .container .image {
@@ -1106,7 +1152,7 @@ footer b {
     font-family: FontAwesome;
     content: "\f0c9";
     line-height: 30px;
-    color: white;
+    color: black;
     z-index: 200;
   }
   .toggle.active:before {
@@ -1115,6 +1161,7 @@ footer b {
     position: fixed;
     right: 25px;
     line-height: 0px;
+    color: whitesmoke;
   }
   nav.active ul {
     display: flex !important;
