@@ -533,49 +533,28 @@ section {
   align-items: center;
   justify-content: center;
 }
-.tagcloud {
-  display: inline-block;
-  font-size: 20px;
-  margin: 0;
-  width: 500px;
+
+.map #holder svg {
+  height: 100%;
+  width: auto;
+  background: none;
 }
-.cloud {
-  color: whitesmoke;
+.map #holder svg rect {
+  height: 100%;
+  width: 48vw;
+  background: none;
 }
-.tagcloud--item:hover {
-  color: #36454f;
-  background: -webkit-linear-gradient(
-    55deg,
-    hsl(250deg 100% 50%) 0%,
-    hsl(260deg 100% 50%) 10%,
-    hsl(266deg 100% 50%) 17%,
-    hsl(271deg 100% 50%) 22%,
-    hsl(276deg 100% 50%) 27%,
-    hsl(280deg 100% 50%) 31%,
-    hsl(284deg 100% 50%) 35%,
-    hsl(287deg 100% 50%) 39%,
-    hsl(291deg 100% 50%) 42%,
-    hsl(294deg 100% 50%) 46%,
-    hsl(297deg 100% 50%) 49%,
-    hsl(300deg 100% 50%) 53%,
-    hsl(305deg 100% 50%) 56%,
-    hsl(311deg 100% 50%) 59%,
-    hsl(316deg 100% 50%) 63%,
-    hsl(322deg 100% 50%) 66%,
-    hsl(327deg 100% 50%) 70%,
-    hsl(332deg 100% 50%) 74%,
-    hsl(337deg 100% 50%) 78%,
-    hsl(342deg 100% 50%) 82%,
-    hsl(347deg 100% 50%) 87%,
-    hsl(352deg 100% 50%) 92%,
-    hsl(0deg 100% 50%) 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.map #holder a {
+  font-size: 1em;
 }
+.map #holder text {
+  font-size: 1.5em;
+  fill: #cdcdcd;
+}
+
 /* project */
 .project {
-  /* height: 80vh; */
+  height: fit-content;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1023,7 +1002,7 @@ footer b {
   }
 }
 
-@media (max-width: 1100px) {
+@media screen and (max-width: 1100px) {
   .banner {
     display: none;
   }
@@ -1052,7 +1031,7 @@ footer b {
     font-size: 18px;
   }
 }
-@media (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
   .skills {
     padding-top: 67px;
     flex-direction: column-reverse;
@@ -1064,9 +1043,8 @@ footer b {
     padding-right: 15px;
     border-radius: 0%;
   }
-  
 }
-@media (max-width: 890px) {
+@media screen and (max-width: 890px) {
   section {
     margin-top: 65px;
   }
@@ -1098,7 +1076,7 @@ footer b {
     text-align: center;
     padding: 20px;
   }
-  nav ul li a, 
+  nav ul li a,
   nav ul li a {
     font-size: 1.4em;
     text-transform: uppercase;
@@ -1107,7 +1085,7 @@ footer b {
   nav ul li a:hover {
     color: #121212;
   }
-  
+
   .toggle {
     display: block;
   }
@@ -1138,7 +1116,7 @@ footer b {
   .about .container .text p {
     font-size: 16px;
   }
-  .about .container .image img{
+  .about .container .image img {
     height: 500px;
   }
   .skills {
@@ -1153,16 +1131,19 @@ footer b {
   }
   .project .container .inside-container {
     grid-template-columns: auto;
+    width: 80%;
   }
   .project .container .inside-container .items {
-    width: calc(100vw - 40px);
+    width: 100%;
+
     border: 2px solid black;
   }
   .project .container .inside-container .items p {
     font-size: 16px;
     width: 100%;
     height: 100%;
-    
+    padding: 5px;
+    overflow-y: scroll;
   }
   .contact .container {
     margin: 0;
@@ -1181,20 +1162,20 @@ footer b {
   .form {
     width: 100%;
   }
-  
+
   label {
     font-size: 14px;
   }
   .frame {
     display: none;
   }
-  footer{
+  footer {
     padding: 30px;
   }
 }
 @media screen and (max-width: 790px) {
   .about .container .image,
-  .about .container .image img{
+  .about .container .image img {
     height: 400px;
     width: 400px;
     margin: 0;
@@ -1208,8 +1189,7 @@ footer b {
 }
 @media screen and (max-width: 500px) {
   .about .container .image,
-  .about .container .image img{
-
+  .about .container .image img {
     height: 300px;
     margin: 0;
     width: 300px;

@@ -41,31 +41,3 @@ $(document).on('click', '.owl-item.active', function () {
     var $speed = 300;  // in ms
     $('.owl-carousel').trigger('to.owl.carousel', [$(this).find('.itm-wrapper').data('position'), $speed]);
 });
-
-// GLobe
-const myTags = [
-    'Python', 'Machine Learning', 'Data Science',
-    'Django', 'Linux', 'C',
-    'React-JS', 'HTML', 'CSS', 'SCSS', 'JS', 'Jquery', 'AWS', 'GCP'
-];
-
-var tagCloud = TagCloud('.cloud', myTags, {
-
-    // radius in px
-    radius: 250,
-
-    // animation speed
-    // slow, normal, fast
-    maxSpeed: 'fast',
-    initSpeed: 'fast',
-
-    // 0 = top
-    // 90 = left
-    // 135 = right-bottom
-    direction: 135,
-
-    // interact with cursor move on mouse out
-    keep: true
-
-});
-// document.addEventListener('contextmenu', event => event.preventDefault());
