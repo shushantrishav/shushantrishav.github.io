@@ -33,9 +33,9 @@ $(document).ready(() => {
 
   a.click(() => {
     if (a.text() == " ") {
-      a.html('<i class="fas fa-moon"></i>');
+      a.html('<i class="fas fa-sun"></i>');
     } else {
-      a.html('<i class="fas fa-sun"></i> ');
+      a.html('<i class="fas fa-moon"></i> ');
     }
   });
 });

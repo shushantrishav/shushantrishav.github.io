@@ -4,11 +4,14 @@ $(document).ready(function () {
       { label: "JavaScript" },
       { label: "HTML" },
       { label: "CSS" },
-      { label: "Java" },
-      { label: "C#" },
-      { label: "PHP" },
-      { label: "SQL" },
-      { label: "Ruby" },
+      { label: "Machine Learning" },
+      { label: "C Programming" },
+      { label: "Data Science" },
+      { label: "Linux" },
+      { label: "React" },
+      { label: "SCSS" },
+      { label: "Django"},
+
     ];
     var settings = {
 
