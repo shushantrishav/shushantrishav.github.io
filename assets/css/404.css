@@ -63,6 +63,8 @@ a{
 }
 
 .button-outer {
+  margin: auto;
+  width: 100ch;
   background: linear-gradient(135deg, #00dade, #fb00ff);
   height: fit-content;
   padding: 0.2rem;
