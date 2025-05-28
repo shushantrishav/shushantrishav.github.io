@@ -71,6 +71,7 @@ html {
   scroll-behavior: smooth;
   color-scheme: dark light;
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 body {
   min-height: 100vh;
