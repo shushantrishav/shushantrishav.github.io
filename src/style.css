@@ -225,7 +225,7 @@ button:hover {
   flex: 1;
   width: 250px;
   border-radius: 50%;
-  background-image: url(./Images/admin_new.png);
+  background-image: url(../Images/admin_new.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
