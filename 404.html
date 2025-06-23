@@ -2,40 +2,51 @@
 <html lang="en">
 
 <head>
-
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE-edge" />
-        <meta name="viewport" content="width=device-width, intial-scale=1.0,minimum-scale=1, maximum-scale=1" />
-        <meta name="google-site-verification" content="7QuTEss70k0j3L9z3riW9Cnk3bI9QUaOP4pfsCx4Crs" />
-        <title>Broken</title>
-        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
-        <link rel="stylesheet" href="./assets/css/404.css">
-        <link rel="shortcut icon" href="./assets/images/chain.png" />
-
-    </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/404.css">
 </head>
 
-<body>
-    <section class="page_404">
-        <h1>
-            Looks like you're lost.
+<body class="bg-white text-gray-900 flex items-center justify-center min-h-screen p-4 overflow-hidden relative">
+
+    <!-- Animated background elements -->
+    <div class="absolute top-0 left-0 w-full h-full pointer-events-none">
+        <div class="animated-element absolute w-16 h-16 bg-blue-100 rounded-full blur-xl opacity-70"
+            style="top: 10%; left: 15%;"></div>
+        <div class="animated-element absolute w-24 h-24 bg-purple-100 rounded-full blur-xl opacity-70"
+            style="bottom: 5%; right: 20%;"></div>
+        <div class="animated-element absolute w-20 h-20 bg-green-100 rounded-full blur-xl opacity-70"
+            style="top: 30%; right: 10%;"></div>
+        <div class="animated-element absolute w-12 h-12 bg-yellow-100 rounded-full blur-xl opacity-70"
+            style="bottom: 15%; left: 30%;"></div>
+    </div>
+
+    <div
+        class="relative z-10 text-center bg-white p-8 md:p-12 rounded-xl shadow-2xl max-w-lg w-full transform transition-all duration-500 ease-in-out scale-100 hover:scale-105">
+        <!-- 404 Heading -->
+        <h1 class="text-7xl md:text-9xl font-extrabold text-gray-800 mb-4 animate-bounce">
+            404
         </h1>
+        <!-- Message -->
+        <p class="text-xl md:text-2xl text-gray-700 mb-6 font-semibold">
+            Oops! Page Not Found
+        </p>
+        <p class="text-md md:text-lg text-gray-600 mb-8 max-w-sm mx-auto">
+            The page you're looking for doesn't exist or has been moved.
+            Don't worry, we'll help you get back on track.
+        </p>
+        <!-- Go Back Button -->
+        <button onclick="goBack()"
+            class="gradient-button text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-green-300 transform transition-transform duration-200">
+            Go Back
+        </button>
+    </div>
 
-        <div class="four_zero_four_bg"></div>
-
-        <div class="contant_box_404">
-
-            <p>The page you are looking for not available!!! </p><br><br>
-
-            <a href="/#"><div class="button-outer">
-                <div class="button">
-                    <p>Go Home</p>
-                </div>
-            </div>
-        </a>
-
-    </section>
+    <script src="./src/404.js"></script>
 </body>
 
 </html>

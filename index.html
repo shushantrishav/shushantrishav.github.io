@@ -2,493 +2,258 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="google-site-verification" content="qW3iqcE4Rlk8XNa1Sh-u8HUFvk7F4jNqqyW0WX8tPnA" />
-  <meta name="description" content=" Explore the personal portfolio of Shushant Rishav — a backend developer passionate about building scalable, reliable, and efficient systems. Browse projects, technical blogs, and connect for software development collaborations. ">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/x-icon" href="./assets/Images/logo.png" />
-  <title>Shushant Rishav</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
-  <link rel="stylesheet" href="./assets/css/model.css" />
-  <link rel="stylesheet" href="./assets/css/nav.css" />
-  <link rel="stylesheet" href="./assets/css/buttons.css" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <script src="https://kit.fontawesome.com/b4a182c864.js" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
-    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./Images/logo.png" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="google-site-verification" content="qW3iqcE4Rlk8XNa1Sh-u8HUFvk7F4jNqqyW0WX8tPnA" />
+    <meta name="description"
+        content=" Explore the personal portfolio of Shushant Rishav — a backend developer passionate about building scalable, reliable, and efficient systems. Browse projects, technical blogs, and connect for software development collaborations. ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shushant Rishav | Portfolio</title>
+    <link rel="stylesheet" href="/src/model.css">
+    <link rel="stylesheet" href="/src/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/46048a6970.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
-  
 <body>
-  <nav class="navbar" id="navbar">
-    <div class="nav-container">
-      <div class="logo" data-aos="zoom-in">
-        <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-        <!-- Created with Inkscape (http://www.inkscape.org/) -->
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo"><a href="#"><img src="./Images/SVG/Logo.svg" alt=""></a></div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">&#9776;</div>
+        </div>
+    </nav>
 
-        <svg fill="#ffffff" width="1907.6398" height="601.00189" viewBox="0 0 504.72969 159.01508" version="1.1"
-          id="svg5" xml:space="preserve" inkscape:export-filename="Sign.svg" inkscape:export-xdpi="96"
-          inkscape:export-ydpi="96" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-          xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg"
-          xmlns:svg="http://www.w3.org/2000/svg">
-          <sodipodi:namedview id="namedview7" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25"
-            inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0"
-            inkscape:deskcolor="#d1d1d1" inkscape:document-units="px" showgrid="false" />
-          <defs id="defs2" />
-          <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1"
-            transform="translate(-1.5154404,-36.66977)">
-            <path style="stroke-width: 1.22899"
-              d="M 3.630205,193.58954 C 1.1035084,190.50022 0.85588391,187.07469 2.8072413,182.20548 5.9789605,174.29107 18.411878,163.06963 30.736162,156.99794 l 6.484878,-3.19482 -0.35558,-6.03129 c -0.387444,-6.56858 -2.322851,-13.03498 -7.766026,-25.94727 -7.340158,-17.41232 -8.450413,-28.870878 -3.931259,-40.572739 7.126018,-18.45195 30.049433,-36.317679 54.729109,-42.65395 8.910632,-2.287661 11.670775,-2.443128 17.31772,-0.975318 9.714746,2.525182 14.240386,8.289482 12.914596,16.449302 -1.41229,8.692597 -19.138728,31.626943 -25.721156,33.277972 -3.022398,0.758052 -3.120926,0.663926 -1.213385,-1.158993 4.286084,-4.096046 13.162366,-16.736604 16.583973,-23.616926 4.687518,-9.425872 5.433258,-13.37698 3.224018,-17.081411 -1.43529,-2.406678 -3.104259,-2.919428 -9.502637,-2.919428 -24.027111,0 -55.405014,22.014932 -62.821793,44.076155 -3.593099,10.687691 -2.054789,22.733556 4.859201,38.050246 4.046682,8.96479 7.170588,18.63042 7.170588,22.18648 0,4.43851 0.861537,4.66756 8.858596,2.35529 19.693023,-5.69408 46.20309,-8.23581 55.491435,-5.32038 3.17655,0.99705 1.85355,1.29775 -6.48488,1.47394 -12.418207,0.26263 -29.345771,3.15637 -45.393094,7.76059 -10.752072,3.0849 -11.687102,3.62884 -12.569419,7.31176 -3.345248,13.96376 -8.482954,21.9097 -19.329145,29.89431 -7.49804,5.51986 -16.5596911,7.00838 -19.6515461,3.22808 z m 13.004486,-4.94663 c 2.944269,-2.07983 7.1546,-5.94659 9.356297,-8.59269 4.03537,-4.84997 9.733522,-15.55815 9.733522,-18.29149 0,-4.69081 -20.295964,9.07282 -26.1917789,17.7618 -4.6845397,6.90385 -5.1494341,12.94114 -0.994834,12.91877 1.5089739,-0.006 5.1525259,-1.7165 8.0967939,-3.79639 z M 283.50176,178.04438 c -1.65878,-6.5596 13.49303,-40.76672 32.34408,-73.02085 l 7.29988,-12.49013 h -16.51557 -16.51561 l -8.72115,11.93984 c -9.48454,12.98502 -26.15208,38.67115 -35.90981,55.34022 -4.71081,8.04751 -6.29497,9.93566 -6.76765,8.06656 -0.87118,-3.44518 0.62679,-7.07653 9.59884,-23.26977 4.34273,-7.83796 7.89585,-14.61031 7.89585,-15.0497 0,-0.43945 -0.86538,-0.0962 -1.92307,0.76292 -2.73892,2.22437 -4.93797,0.44288 -5.8184,-4.71299 l -0.75969,-4.44887 -8.16159,7.52233 c -6.59984,6.0829 -8.37296,7.13569 -9.26643,5.502 -0.7629,-1.39492 -0.78111,-2.32395 -0.0589,-3.00137 0.57534,-0.53958 1.04609,-1.58888 1.04609,-2.33166 0,-0.74284 -1.90808,-0.0343 -4.24013,1.57001 -5.63533,3.8817 -8.39306,3.76404 -9.82738,-0.41943 -0.64233,-1.8735 -1.26327,-3.58662 -1.37986,-3.80697 -0.11649,-0.2203 -2.24491,1.32362 -4.72956,3.43092 -4.58698,3.8904 -7.75795,3.7815 -7.75795,-0.26665 0,-1.62935 -0.59051,-1.90393 -2.2448,-1.04386 -1.23462,0.6419 -3.59163,1.19876 -5.23779,1.2375 -2.65901,0.0624 -3.02789,-0.47893 -3.30566,-4.84998 -0.17194,-2.70617 -0.74309,-4.9203 -1.26922,-4.9203 -1.26603,0 -15.56426,11.10854 -19.36931,15.04837 -1.64614,1.70448 -3.3297,3.10352 -3.74129,3.10901 -1.32552,0.0172 -0.79785,-3.45066 0.9977,-6.55748 3.37281,-5.83612 -4.49408,2.11885 -9.86346,9.97386 -2.70361,3.95518 -5.57485,7.19126 -6.38047,7.19126 -2.10636,0 -1.82051,-1.54186 1.16169,-6.26538 l 2.62652,-4.16013 -1.91671,-5.87881 c -1.90912,-5.8555 -1.93042,-5.87128 -5.37014,-3.98612 -4.82806,2.64609 -10.44362,2.57652 -11.93359,-0.14819 -1.72267,-3.14975 -2.71384,-2.90564 -8.97908,2.2112 -3.01798,2.46476 -6.1831,4.50845 -7.03363,4.54151 -2.53922,0.0984 -3.98371,-3.04525 -2.86131,-6.22767 1.17085,-3.3199 0.31561,-3.46599 -3.07485,-0.52527 -5.10453,4.42803 -9.42542,1.40314 -8.19495,-5.73695 0.46237,-2.68317 0.18628,-2.91136 -2.37522,-1.96363 -2.52508,0.93418 -13.48609,9.70803 -20.062937,16.05957 -1.209652,1.16822 -2.506901,1.65739 -2.882729,1.08707 -0.962181,-1.46007 3.672057,-10.34391 13.219832,-25.34256 5.960634,-9.36356 8.493404,-12.41763 9.298944,-11.21309 0.8075,1.20752 -0.11954,3.72578 -3.42583,9.30617 -2.493098,4.20785 -4.532917,8.02673 -4.532917,8.48643 0,0.45948 1.556937,-0.15163 3.459807,-1.35789 1.9029,-1.20654 4.34008,-2.1937 5.41595,-2.1937 2.66602,0 5.0917,3.9927 5.0917,8.38109 v 3.62289 l 4.69012,-3.05075 c 2.5796,-1.67798 6.8457,-5.40078 9.48024,-8.27294 2.63454,-2.87217 5.43597,-5.22214 6.22538,-5.22214 2.46086,0 2.84476,3.10871 0.80837,6.54638 -3.81727,6.44402 -3.68869,7.11332 1.17244,6.10224 3.64098,-0.75731 4.64302,-0.4589 5.14652,1.53224 0.36049,1.42502 1.74246,2.47209 3.26214,2.4714 3.39197,-0.001 14.07388,-7.67294 20.22508,-14.52488 5.27428,-5.87524 9.90133,-8.49043 11.82685,-6.68457 0.85532,0.80217 -0.46478,3.09161 -4.19155,7.26936 -8.75476,9.81435 -13.42912,19.99707 -9.1796,19.99707 2.1391,0 17.65248,-16.93939 24.08782,-26.30204 2.86723,-4.1714 5.54506,-7.0807 5.95075,-6.46501 0.81594,1.23818 0.386,2.31999 -4.6515,11.70357 -3.3005,6.14796 -3.3477,6.39824 -0.99767,5.29012 7.69902,-3.63039 10.94695,-2.26437 10.94695,4.6041 0,5.2032 2.06998,4.60822 11.70961,-3.36546 6.42338,-5.31329 9.16479,-6.79912 11.56003,-6.26566 1.72697,0.38452 3.91161,-0.0343 4.85487,-0.92593 2.92974,-2.7765 3.17899,0.17337 0.43307,5.1256 -2.67346,4.82137 -4.3301,11.47951 -3.26019,13.10301 0.87602,1.32934 10.03461,-4.77307 15.38077,-10.24824 3.4988,-3.58324 5.02097,-4.37568 6.17609,-3.21525 0.84313,0.84697 1.42074,2.28462 1.28356,3.19477 -0.31674,2.10169 1.30838,2.11668 3.87062,0.0343 2.55812,-2.0775 4.85895,0.53558 4.1408,4.70256 -0.65817,3.8194 -0.23077,3.75302 5.8264,-0.90475 4.56994,-3.51412 21.82904,-26.786175 21.82904,-29.43415 0,-0.605504 -5.49971,-1.43657 -12.22153,-1.846838 -7.94506,-0.484654 -13.53062,-1.588946 -15.96279,-3.15506 -2.05769,-1.32499 -3.74193,-2.61416 -3.74272,-2.864842 -7.9e-4,-0.250623 7.0244,-0.251196 15.61154,-9.72e-4 l 15.61294,0.4549 11.73675,-9.097086 c 10.21528,-7.917836 11.89838,-8.801545 12.98357,-6.817379 1.04105,1.903542 0.52737,3.392182 -3.11297,9.020869 l -4.35981,6.741047 8.43858,0.127602 c 4.64117,0.07038 11.13223,0.670563 14.42458,1.333973 l 5.98605,1.206259 8.97906,-13.173336 c 11.5295,-16.915073 16.17455,-22.80148 17.99289,-22.80148 3.02202,0 1.20059,4.696 -7.57794,19.537644 -4.97184,8.405753 -8.85586,15.283155 -8.63112,15.283155 0.22475,0 4.97145,-4.000317 10.54834,-8.889663 20.63752,-18.093178 42.84449,-27.047959 51.06973,-20.593469 5.09659,3.999401 3.27937,12.192123 -6.68798,30.15175 -11.42327,20.582996 -31.33808,39.392126 -52.47175,49.558426 -5.35118,2.57415 -9.72938,5.19209 -9.72938,5.81757 0,0.62547 1.06316,2.19433 2.36256,3.4863 1.29943,1.29204 3.65641,5.4568 5.23778,9.25513 1.58137,3.79834 3.44013,6.90728 4.13055,6.90877 0.69041,0.001 6.06636,-1.72234 11.94652,-3.83073 15.76022,-5.65094 27.18949,-8.22195 41.17146,-9.26153 12.53163,-0.93172 30.50023,1.08884 35.02862,3.93892 1.73745,1.09354 0.89574,1.20419 -3.10305,0.40798 -8.23364,-1.63948 -33.40159,-1.04249 -41.90235,0.99397 -4.11538,0.98591 -14.89223,4.48772 -23.94853,7.78188 -13.95086,5.07446 -17.03457,5.75108 -20.18875,4.42948 -3.78447,-1.58569 -4.32916,-2.446 -10.01105,-15.81188 -2.78296,-6.5465 -3.74687,-7.67207 -7.13066,-8.32673 -5.70667,-1.10407 -5.64412,-4.11945 0.11165,-5.38047 27.48431,-6.02138 61.48529,-40.757792 73.11991,-74.701405 l 1.24331,-3.627471 -6.34853,0.8258 c -22.85938,2.973503 -60.75764,36.020934 -79.78985,69.577116 -8.62553,15.20791 -20.1604,38.95861 -21.75113,44.78643 -1.40101,5.13259 -3.74714,6.40345 -4.7199,2.55665 z m -69.20814,-56.25541 c 5.43179,-5.55098 5.66489,-8.72087 0.33182,-4.51118 -3.11176,2.45623 -8.1885,10.07647 -6.71311,10.07647 0.51451,0 3.38612,-2.50441 6.38137,-5.56529 z m 218.50542,36.60126 c -1.37179,-1.19 -2.01881,-2.18775 -1.43778,-2.21728 0.58103,-0.0286 1.9279,0.94659 2.99302,2.16911 2.46323,2.82723 1.67648,2.85156 -1.55524,0.0458 z m -29.93024,-11.12 c 0,-0.70362 0.89788,-2.51242 1.99536,-4.01948 2.10558,-2.89161 2.68228,-9.01772 0.99767,-10.59768 -0.54872,-0.51441 -0.99767,-2.51672 -0.99767,-4.4491 0,-3.43886 -0.18514,-3.37301 -8.72967,3.10265 -10.79465,8.18111 -13.40838,9.16981 -15.56996,5.88967 -2.47843,-3.76096 -2.02835,-6.24238 2.47784,-13.66073 6.30954,-10.38718 9.78805,-8.34219 3.82307,2.24755 -4.18925,7.43736 -3.94049,9.53555 0.82791,6.98257 6.17646,-3.30686 18.19215,-12.91413 25.00532,-19.99329 4.42971,-4.60267 7.39133,-6.61345 9.74079,-6.61345 1.85671,0 3.37587,0.2472 3.37587,0.54875 0,0.30212 -3.14347,4.09598 -6.98552,8.43133 -3.84205,4.33539 -7.43368,9.15322 -7.98141,10.70628 -1.37945,3.91135 -1.24532,7.56468 0.27791,7.56468 2.14524,0 16.84664,-16.27244 22.91063,-25.35894 4.12628,-6.18298 6.03062,-8.121595 6.81251,-6.93513 0.78187,1.18645 -0.19155,3.82848 -3.4825,9.45122 -2.51226,4.29242 -4.56772,8.03788 -4.56772,8.32324 0,0.28553 1.97534,-0.55904 4.38967,-1.87654 5.80855,-3.16959 9.30093,-1.06137 9.7601,5.89179 l 0.31637,4.79287 9.73741,-7.78829 c 6.85177,-5.48026 10.70652,-7.68924 13.00757,-7.45407 1.79861,0.18368 3.81433,-0.17623 4.47945,-0.79993 2.69227,-2.52496 3.30724,0.98773 0.85574,4.88791 -3.09258,4.92013 -4.96792,11.83295 -3.56668,13.14714 1.22292,1.14692 13.18499,-7.2094 17.54615,-12.25719 1.76076,-2.03795 3.68032,-3.70541 4.26566,-3.70541 1.56052,0 1.29739,6.52321 -0.40057,9.92981 -3.49076,7.00352 -1.00517,6.21285 5.48533,-1.74492 3.85743,-4.72948 7.24654,-8.24548 7.53134,-7.8133 0.96704,1.46747 -16.6555,24.04035 -18.36452,23.52337 -1.76633,-0.53444 -2.1793,-7.19108 -0.74951,-12.081 0.56388,-1.92849 -0.94846,-1.26068 -6.06957,2.68019 -8.82386,6.79037 -11.10852,6.44092 -13.97541,-2.13752 -0.0939,-0.28151 -2.1681,1.264 -4.6089,3.43459 -4.50664,4.00775 -7.69095,3.94201 -7.69095,-0.15851 0,-1.62939 -0.59051,-1.90393 -2.24476,-1.04386 -1.23461,0.6419 -3.59164,1.19876 -5.23778,1.2375 -2.65902,0.0624 -3.02791,-0.47893 -3.30566,-4.84998 -0.17194,-2.70617 -0.67831,-4.92036 -1.12526,-4.92036 -1.69302,0 -8.27266,4.80214 -15.65784,11.42783 -4.44918,3.99162 -8.02984,6.30943 -8.5433,5.53028 -0.51345,-0.77917 -0.23906,-2.15354 0.65487,-3.27929 0.84635,-1.0659 1.5388,-2.57811 1.5388,-3.3606 0,-1.90743 -7.95143,6.85309 -12.06324,13.29069 -3.11187,4.87207 -5.8949,6.70237 -5.8949,3.87684 z m 62.58786,-25.51594 c 5.5333,-5.57341 5.94106,-8.7061 0.58269,-4.4765 -2.90291,2.29138 -8.23036,10.07647 -6.89548,10.07647 0.41417,0 3.25495,-2.51998 6.31279,-5.59997 z M 392.1438,111.21211 c -0.6859,-0.41999 -1.2471,-1.65589 -1.2471,-2.74639 0,-3.04085 2.58443,-3.86179 4.64198,-1.47457 1.60259,1.85937 1.64776,2.3363 0.34652,3.65769 -1.63228,1.65738 -1.89083,1.69634 -3.74129,0.56304 z"
-              id="path296" />
-          </g>
-        </svg>
-      </div>
-      <div class="hamburger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-      </div>
-      <ul class="nav-links" data-aos="fade-down">
-        <li><a href="#welcome">Home</a></li>
-        <li><a href="#about">about</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#project">Project</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="">Resume</a></li>
-      </ul>
-    </div>
-  </nav>
-  <section class="welcome" id="welcome">
-    <canvas id="canvas" class="canvas"></canvas>
-    <div class="welcome-container">
-      <div class="welcome-wrapper">
-        <div class="text-wrapper" data-aos="zoom-in-right">
-          <div>
-            <h2>Hey There,</h2>
-          </div>
-          <div>
-            <h1>My Name is <i>Shushant</i></h1>
-          </div>
-          <div class="text">
-            <p>
-              Hey, I'm Shushant Rishav. I have persued my B-Tech in CSE from
-              Dayananda Sagar University in Bangalore.Along with frontend
-              development I also have experience in machine learning, data
-              science, and various programming languages such as Python,
-              Django, and C.
-            </p>
-          </div>
-        </div>
-        <div class="model" data-aos="zoom-in-left">
-          <div class="wrapper">
-            <img src="./assets/Images/model.png" alt="" />
-            <div class="triangle">
-              <div class="triangle-inner"></div>
+    <!-- Welcome Section -->
+    <section id="welcome" class="welcome-section">
+        <div class="welcome-wrapper">
+            <div class="model" data-aos="zoom-in-left">
+                <div class="wrapper">
+                    <img src="./Images/model.png" alt="" />
+                    <div class="triangle">
+                        <div class="triangle-inner"></div>
+                    </div>
+                </div>
             </div>
-          </div>
+            <div class="welcome-text">
+                <h1>Hi, I'm Shushant</h1>
+                <p>A backend engineer passionate about building scalable, distributed systems and high-performance
+                    infrastructure.</p>
+                <div class="btnwrapper">
+                    <a href="#projects" class="btn">View My Work</a>
+                    <a href="https://drive.google.com/uc?export=download&id=1HRh5O4_m8ZPjJZ2_FMWkPcrXTcUWbaxo"
+                        class="btn">Download Resume</a>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="bottom">
-        <!-- <h2 class="alpha" id="alpha"><i class="fa-solid fa-angle-down"></i></h2> -->
-        <p class="left"></p>
-        <p class="right">slide -></p>
-      </div>
-    </div>
-  </section>
-  <section id="about" class="about">
-    <div class="about-container">
-      <div class="about-wrapper">
-        <div class="abt-img" data-aos="fade-up" data-aos-duration="1500">
-          <img src="./assets/Images/admin_new.png" alt="" />
-        </div>
-        <div class="text-wrapper" data-aos="fade-up" data-aos-duration="1500">
-          <div class="heading">
-            <h1>Hello</h1>
-          </div>
-          <div class="text">
-            <p>
-              Hey, I'm Shushant Rishav. I have persued my B-Tech in CSE from
-              Dayananda Sagar University in Bangalore. I also have experience
-              in machine learning, data science, and various programming
-              languages such as Python, Django, and C. <br /><br />
+    </section>
 
-              Apart from my education, I have worked as a freelance animated
-              ad creator for 18 months on Fiverr and volunteered as a team
-              lead for technical assistance during the NASA Space Apps
-              Challenge.
-            </p>
-            
-          </div>
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="about-wrapper">
+            <div class="about-image"></div>
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>I&apos;m Shushant Rishav, a backend engineer with a strong foundation in computer science and a focus
+                    on
+                    building reliable, scalable backend systems and distributed services. Over the past few years,
+                    I&apos;ve
+                    worked extensively with Golang, Python, Docker, Redis, and cloud-native tools to design
+                    high-performance APIs, decentralized applications, and data-driven platforms. I enjoy architecting
+                    clean, efficient systems that solve real business problems, whether it&apos;s handling high-traffic
+                    URL
+                    shortening, enabling blockchain-based payments, or designing machine learning pipelines for
+                    large-scale data. I&apos;m passionate about distributed systems, systems design, and backend
+                    engineering
+                    best practices, and continuously challenge myself to deliver clean, performant, and maintainable
+                    code.</p>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <section id="skills" class="skills">
-    <div class="skills-container">
-      <div class="skills-wrapper">
-        <div class="text-wrapper" data-aos="fade-up" data-aos-duration="1500">
-          <div class="heading">
-            <h1 class="head">Ski<b>lls</b></h1>
-          </div>
+    </section>
 
-          <div class="text">
-            <p>
-              I possess a diverse range of skills that make me an excellent
-              fit for any team. With a strong background in programming
-              languages like Python, C, and JavaScript, I am also experienced
-              in web development using React-JS, HTML, CSS, and SCSS. In
-              addition, I have expertise in Machine Learning, Data Science,
-              and Django, along with experience working in a Linux
-              environment. I have also worked on cloud computing platforms
-              like AWS and GCP. With these skills, I have completed various
-              projects, including a Gender Detection Model, a Malware
-              Prediction Algorithm, and a Word Cloud app, among others. My
-              commitment to continuous learning and development of my skills
-              makes me an asset to any team.
-            </p>
-          </div>
-        </div>
-        <div class="psudo">
-          <svg width="0" height="0">
-            <defs>
-              background-image: linear-gradient( 109.6deg, rgb(44,83,131,1)
-              18.9%, rgb(95,175,201) 91.1% );
-              <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" style="stop-color: #fa00ff"></stop>
-                <stop offset="52%" style="stop-color: #2bd2ff"></stop>
-                <stop offset="90%" style="stop-color: #2bff88"></stop>
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
-        <div class="map" id="map" data-aos="zoom-in-up" data-aos-duration="2000">
-          <div id="holder"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="project" class="projects">
-    <div class="container-project">
-      <h1 class="head">Proj<b>ects</b></h1>
-      <div class="project-wrapper">
-        <!--  -->
-        <div class="proj-item" data-aos="fade-up" data-aos-duration="1100">
-          <div class="proj-img" data-aos="fade-right">
-            <img src="./assets/Images/Project/News.png" alt=""
-              onclick='window.open("https://shushantrishav.github.io/NewsSelect/");' />
-            <div class="proj-tech">
-              <i>NLP&nbsp;/&nbsp;Django</i>
-            </div>
-          </div>
-          <div class="text-wrapper">
-            <div class="heading">
-              <h1>NewsSelect</h1>
-            </div>
-            <div class="text">
-              <p>
-                NewsSelect uses deep learning to develop a text summarization
-                model. It preprocesses and tokenizes news articles, trains and
-                saves the model, and deploys it on a Django web app. The app
-                allows users to read personalized news summaries categorized
-                by topic from various reputable news portals.
-              </p>
-            </div>
 
-            <div class="proj-links">
-              <a href="https://shushantrishav.github.io/NewsSelect/" target="_blank" class="btn1">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>Learn More&nbsp;
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-              </a>
-              <a href="https://shushantrishav.pythonanywhere.com/news/" target="_blank" class="btn2">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>Github&nbsp;<i class="fa-brands fa-github"></i></a>
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="skills_wrapper">
+            <div class="skills-text">
+                <h2>Skills</h2>
+                <p>I specialize in backend engineering with expertise in Golang and Python for building distributed
+                    systems, high-performance APIs, and scalable web services. My technical toolkit includes Docker,
+                    Redis, and cloud-native development tools for containerized and microservices-based applications.
+                    I&apos;m experienced in machine learning workflows using TensorFlow, Scikit-learn, and LightGBM,
+                    with
+                    hands-on work in AI-driven platforms and data pipelines. Additionally, I have a solid foundation in
+                    core computer science principles like data structures, algorithms, networking, database management
+                    systems, and system design — ensuring the solutions I build are reliable, efficient, and scalable.
+                </p>
             </div>
-          </div>
+            <div class="map" id="map" data-aos="zoom-in-up" data-aos-duration="2000">
+                <div id="holder"></div>
+            </div>
         </div>
-        <!--  -->
-        <div class="proj-item" data-aos="fade-up" data-aos-duration="1100">
-          <div class="text-wrapper">
-            <div class="heading">
-              <h1>Gender Detection</h1>
+    </section>
+
+
+
+    <!-- Project Section -->
+    <section id="projects" class="projects-section">
+        <div class="project_heading">
+            <h2>Project</h2>
+        </div>
+        <div class="project">
+            <div class="project-text">
+                <h3>BlockCart (Decentralized Payments and Loyalty Management System)</h3>
+                <p>I built BlockCart to help retail businesses securely process customer payments and manage loyalty
+                    rewards without relying on banks or intermediaries. It runs on the Ethereum blockchain&apos;s
+                    Sepolia
+                    test network for demonstration purposes, ensuring secure, transparent, and immutable transactions.
+                    Alongside seamless payments, BlockCart includes a smart contract-based loyalty system that
+                    automatically issues and redeems customer reward points. The system processed over 200 demo
+                    transactions, reduced transaction fraud risks by 50&hyphen;70%, and showed the potential to increase
+                    customer retention by 5&hyphen;10%, boosting profits for loyal customers.</p>
+                <div class="project-btn"> <button
+                        onclick="window.open('https://github.com/shushantrishav/Blockchain_In_Retail')"><i
+                            class="fa-brands fa-github"></i> GitHub </button>
+                    <button onclick="window.open('https://blockcart.onrender.com/')"><i class="fa-solid fa-laptop"></i>
+                        Demo</button>
+                </div>
             </div>
-            <div class="text">
-              <p>
-                The project involved the development of a model utilizing the InceptionV3 algorithm. The model was
-                designed to analyze input from a person's system or webcam and determine whether the person is male or
-                female. By leveraging the power of the InceptionV3 algorithm, the model effectively processed and
-                classified the visual data to provide accurate gender detection.
-              </p>
+            <div class="project-img"><img src="./Images/Project/BlockCart.png" alt="" srcset=""></div>
+        </div>
+
+        <div class="project reverse">
+            <div class="project-text">
+                <h3>CutLink (Distributed URL Shortening & Management Service)</h3>
+                <p>I built CutLink to help platform owners and developers manage large volumes of short URLs
+                    reliably in
+                    high-traffic environments. The service uses Go, Docker, and Redis with consistent hashing to
+                    evenly
+                    distribute traffic and ensure fault tolerance. It applies a 7-day time-to-live (TTL) for
+                    automatic
+                    link expiry and includes built-in rate limiting and real-time analytics. CutLink was tested to
+                    handle over 500,000 shortened URLs per month and maintained 10,000+ active links with consistent
+                    sub-1.5 second redirects, even under heavy concurrent request loads.</p>
+                <div class="project-btn"> <button
+                        onclick="window.open('https://github.com/shushantrishav/Go_URL_Shortner')"><i
+                            class="fa-brands fa-github"></i> GitHub </button>
+                    <button onclick="window.open('https://web.cutlink.in')"><i class="fa-solid fa-laptop"></i>
+                        Demo</button>
+                </div>
+            </div>
+            <div class="project-img"><img src="./Images/Project/CutLink.png" alt="" srcset=""></div>
+        </div>
+
+        <div class="project">
+            <div class="project-text">
+                <h3>NewsSelect (AI-Powered News Summarization Platform)</h3>
+                <p>I created NewsSelect to help news readers quickly digest important information by
+                    automatically
+                    summarizing lengthy news articles. It scrapes live articles from multiple sources and uses a
+                    Bi-directional LSTM model with an attention mechanism to generate clear, concise summaries.
+                    The
+                    platform processed over 42,000 articles, achieving an impressive 89.62% summarization
+                    accuracy. Its
+                    clean web interface, built with Django and REST APIs, helped users cut their reading time by
+                    around
+                    70% while still delivering key takeaways from every story.</p>
+                <div class="project-btn"> <button
+                        onclick="window.open('https://github.com/shushantrishav/NewsSelect')"><i
+                            class="fa-brands fa-github"></i> GitHub </button>
+                    <button onclick="window.open('https://shushantrishav.pythonanywhere.com/news/')"><i
+                            class="fa-solid fa-laptop"></i> Demo</button>
+                </div>
+            </div>
+            <div class="project-img"><img src="./Images/Project/newsSelect.png" alt="" srcset=""></div>
+        </div>
+
+        <div class="project reverse">
+            <div class="project-text">
+                <h3>Malware Prediction Model (Large-Scale Malware Risk Detection)</h3>
+                <p>I developed this Malware Prediction Model to help enterprise security teams detect and
+                    prioritize
+                    potential malware threats in massive system telemetry data. Using LightGBM, the system
+                    analyzed 8.9
+                    million records across 83 different features, achieving a 73.4% accuracy, 0.79 AUC, and
+                    0.73 F1
+                    score. To handle this scale, I optimized the data pipeline with Dask and Pandas,
+                    reducing memory use
+                    by 40% and preprocessing time by 3X. The result was a reliable, scalable risk detection
+                    system
+                    capable of identifying high-risk endpoints in real time.</p>
+                <div class="project-btn">
+                    <button onclick="window.open('https://github.com/shushantrishav/Microsoft-Malware-Prediction')"><i
+                            class="fa-brands fa-github"></i> GitHub </button>
+                </div>
+
+            </div>
+            <div class="project-img"><img src="./Images/Project/malware.png" alt="" srcset=""></div>
+        </div>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-info">
+            <div class="note">
+                <div class="card_corner">
+                    <div class="card-corner_triangle"></div>
+                </div>
+                <h2>Thank You!</h2>
+                <p>Thank you for exploring my portfolio and taking a glimpse into my creative world. It has been a
+                    pleasure
+                    sharing my work with you. If you have any questions or would like to discuss potential
+                    collaborations,
+                    I'd be delighted to connect with you. Let's bring visions to life!</p>
             </div>
 
-            <div class="proj-links">
-              <a href="https://github.com/shushantrishav/gender-detecion-cnn/blob/main/Gender_classification.ipynb" target="_blank" class="btn1 rev">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>Learn More&nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-              <a href="github" target="_blank" class="btn2">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>Github&nbsp;<i class="fa-brands fa-github"></i></a>
-            </div>
-          </div>
-          <div class="proj-img rev" data-aos="fade-left">
-            <img src="./assets/Images/Project/Project5.png" alt=""
-              onclick='window.open("https://github.com/shushantrishav/gender-detecion-cnn/blob/main/Gender_classification.ipynb");' />
-            <div class="proj-tech">
-              <i>OpenCV&nbsp;/&nbsp;Computer Vision</i>
-            </div>
-          </div>
         </div>
-        <!--  -->
-        <div class="proj-item" data-aos="fade-up" data-aos-duration="1100">
-          <div class="proj-img" data-aos="fade-right">
-            <img src="./assets/Images/Project/cloud.png" alt=""
-              onclick='window.open("https://shushantrishav.github.io/word_cloud/");' />
-            <div class="proj-tech">
-              <i>Data Science&nbsp;/&nbsp;Django</i>
-            </div>
-          </div>
-          <div class="text-wrapper">
-            <div class="heading">
-              <h1>WordCloud</h1>
-            </div>
-            <div class="text">
-              <p>
-                A word cloud is a visual representation of text data, where
-                the size of each word represents its frequency or importance
-                in the data. It is often used as a tool for exploratory data
-                analysis, text mining, and data visualization.
-              </p>
-            </div>
 
-            <div class="proj-links">
-              <a href="https://shushantrishav.github.io/word_cloud/" target="_blank" class="btn1">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>Learn More&nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-              <a href="https://github.com/shushantrishav/word_cloud" target="_blank" class="btn2">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>Github&nbsp;<i class="fa-brands fa-github"></i></a>
-            </div>
-          </div>
+        <form class="contact-form">
+            <h2>Drop Me A Messege !!</h2>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="from_email" placeholder="Your Email" required>
+            <input type="text" name="subject" placeholder="Subject" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="button" id="contact-submit">Send</button>
+        </form>
+
+
+
+    </section>
+    <div id="toast" class="toast"></div>
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-social">
+            <ul class="btn-list rounded">
+                <li><a href="https://www.linkedin.com/in/shushantrishav/" class="btn-gradient rounded linkedin"><i
+                            class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/shushantrishav" class="btn-gradient rounded github"><i
+                            class="fa fa-github"></i></a></li>
+                <li><a href="mailto:sushantrishav90@gmail.com" class="btn-gradient rounded gmail"><i
+                            class="fa-solid fa-envelope"></i></a></li>
+                <li><a href="https://x.com/ShushantRishav" class="btn-gradient rounded twitter"><i
+                            class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href="https://drive.google.com/uc?export=download&id=1HRh5O4_m8ZPjJZ2_FMWkPcrXTcUWbaxo"
+                        class="btn-gradient rounded download"><i class="fa fa-download"></i></a></li>
+            </ul>
         </div>
-        <!--  -->
-        <div class="proj-item" data-aos="fade-up" data-aos-duration="1100">
-          <div class="text-wrapper">
-            <div class="heading">
-              <h1>Malware Prediction</h1>
-            </div>
-            <div class="text">
-              <p>
-                Malware attacks are one of the rising concerns in terms of
-                security and integrity of data for the users and organizations
-                using Windows systems. Which comes with a great challenge for
-                Microsoft to provide patches for its defender. As well as
-                other security products which provides accurate and efficient
-                track whether machine is infected with malware or not.
-              </p>
-            </div>
 
-            <div class="proj-links">
-              <a href="https://shushantrishav.github.io/Microsoft-Malware-Prediction/" target="_blank"
-                class="btn1 rev">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>Learn More &nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-              <a href="https://github.com/shushantrishav/Microsoft-Malware-Prediction" target="_blank" class="btn2">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>Github &nbsp;<i class="fa-brands fa-github"></i></a>
-            </div>
-          </div>
-          <div class="proj-img rev" data-aos="fade-left">
-            <img src="./assets/Images/Project/malware.png" alt=""
-              onclick='window.open("https://shushantrishav.github.io/Microsoft-Malware-Prediction/");' />
-            <div class="proj-tech">
-              <i>Machine Learning&nbsp;/&nbsp;Data Science</i>
-            </div>
-          </div>
-        </div>
-        <!--  -->
-        <div class="proj-item" data-aos="fade-up" data-aos-duration="1100">
-          <div class="proj-img" data-aos="fade-right">
-            <img src="./assets/Images/Project/cov.png" alt=""
-              onclick='window.open("https://shushantrishav.github.io/covid_prediction/");' />
-            <div class="proj-tech">
-              <i>Django&nbsp;/&nbsp;Machine Learning</i>
-            </div>
-          </div>
-          <div class="text-wrapper">
-            <div class="heading">
-              <h1>Covid Prediction</h1>
-            </div>
-            <div class="text">
-              <p>
-                In the face of the COVID-19 pandemic, this (short-term)
-                prediction model has become an invaluable tool in
-                understanding the spread of the virus and guiding effective
-                public health responses. This website is dedicated to
-                providing you with predictions of Covid-19 Cases in India.
-              </p>
-            </div>
+        <p class="footer-note">© 2023 Shushant Rishav. All rights reserved.</p>
+    </footer>
+    <script src="./src/script.js"></script>
+    <script src="./src/jquery.svg3dtagcloud.min.js"></script>
+    <script src="./src/tagcloud.js"></script>
+    <script src="./src/contact.js"></script>
 
-            <div class="proj-links">
-              <a href="https://shushantrishav.github.io/covid_prediction/" target="_blank" class="btn1">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>Learn More&nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-              <a href="https://github.com/shushantrishav/covid_prediction" target="_blank" class="btn2">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>Github&nbsp;<i class="fa-brands fa-github"></i></a>
-            </div>
-          </div>
-        </div>
-        <!--  -->
-        <div class="proj-item" data-aos="fade-up" data-aos-duration="1100">
-          <div class="text-wrapper">
-            <div class="heading">
-              <h1>BlackArch (WSL)</h1>
-            </div>
-            <div class="text">
-              <p>
-                BlackArch is a penetration testing and security
-                research-focused Linux distribution. It provides over 2,500
-                security tools, lightweight customization, and a rolling
-                release model. As it doesn't have an official version
-                specifically designed for the Windows Subsystem for Linux
-                (WSL) thus added the BlackArch repository to an existing Arch
-                Linux installation within WSL to access its tools.
-              </p>
-            </div>
-
-            <div class="proj-links">
-              <a href="https://shushantrishav.github.io/Blackarchwsl/" target="_blank" class="btn1 rev">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>Learn More&nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-              <a href="https://github.com/shushantrishav/Blackarchwsl" target="_blank" class="btn2">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>Github&nbsp;<i class="fa-brands fa-github"></i></a>
-            </div>
-          </div>
-          <div class="proj-img rev" data-aos="fade-left">
-            <img src="./assets/Images/Project/wsl.png" alt=""
-              onclick='window.open("https://shushantrishav.github.io/Blackarchwsl/");' />
-            <div class="proj-tech">
-              <i>Linux&nbsp;/&nbsp;Docker</i>
-            </div>
-          </div>
-        </div>
-        <!--  -->
-      </div>
-    </div>
-  </section>
-  <section id="contact" class="contact">
-    <div class="contact-container">
-      <div class="contact-wrapper" data-aos="fade-up" data-aos-duration="1100">
-        <div class="ele-wrapper">
-          <div class="note">
-            <div class="card__corner">
-              <div class="card__corner-triangle"></div>
-            </div>
-            <p>
-              Thank you for exploring my portfolio and taking a glimpse into
-              my creative world. It has been a pleasure sharing my work with
-              you. If you have any questions or would like to discuss
-              potential collaborations, I'd be delighted to connect with you.
-              Let's bring visions to life!
-            </p>
-            <div class="imag">
-              <img src="./assets/Images/SVG/Sign.svg" alt="" />
-            </div>
-          </div>
-          <h1 class="head-2">Connect With me:</h1>
-          <div class="social">
-            
-            <a href="https://www.facebook.com/ShushantRishav/" target="_blank" data-aos="zoom-in"
-              data-aos-duration="1000"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://twitter.com/rishavshushant" target="_blank" data-aos="zoom-in" data-aos-duration="1000"><i
-                class="fa-brands fa-twitter"></i></a>
-            <a href="https://www.linkedin.com/in/shushantrishav/" target="_blank" data-aos="zoom-in"
-              data-aos-duration="1000"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="https://github.com/shushantrishav/" target="_blank" data-aos="zoom-in" data-aos-duration="1000"><i
-                class="fa-brands fa-github"></i></a>
-          </div>
-        </div>
-        <div class="form-wrapper">
-          <h1 style="color: #f9f9f9"><i> Get in</i> touch !!!</h1>
-          <form action="" method="post" class="form" id="myForm" data-aos="fade-left" data-aos-duration="1000">
-            <div class="field">
-              <label for="Name">Name: </label>
-              <div class="ip-tex">
-                <input type="text" name="Name" id="" required />
-              </div>
-            </div>
-
-            <div class="field">
-              <label for="Email">Email: </label>
-              <div class="ip-tex">
-                <input type="email" name="Email" id="" required />
-              </div>
-            </div>
-
-            <div class="field">
-              <label for="Subject">Subject: </label>
-              <div class="ip-tex">
-                <input type="text" name="Subject" id="" required />
-              </div>
-            </div>
-
-            <div class="field">
-              <label for="Message"> Message: </label>
-              <div class="ta">
-                <textarea type="text" name="Message" id="" class="message" required></textarea>
-              </div>
-            </div>
-          </form>
-          <div class="frm-sub">
-            <div class="btn">
-              <button onclick="SubForm()"><b>Submit</b></button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="footer" id="footer">
-    <footer>Copyright © 2023 | Shushant Rishav. All rights reserved.</footer>
-  </section>
-
-  <script src="./assets/js/Canvas.js"></script>
-  <script src="./assets/js/nav.js"></script>
-
-  <script src="./assets/js/jquery.svg3dtagcloud.min.js"></script>
-  <script src="./assets/js/tagcloud.js"></script>
-  <script src="./assets/js/script.js"></script>
-  <script>
-    AOS.init();
-  </script>
 </body>
 
 </html>
