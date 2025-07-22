@@ -2,259 +2,347 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <link rel="shortcut icon" href="./Images/logo.png" type="image/x-icon">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="google-site-verification" content="qW3iqcE4Rlk8XNa1Sh-u8HUFvk7F4jNqqyW0WX8tPnA" />
-    <meta name="google-site-verification" content="7ILEqBGZR-bd5oEXYah6E7atvh-jtAR8JrKhkiLi1g8" />
-    <meta name="description"
-        content=" Explore the personal portfolio of Shushant Rishav — a backend developer passionate about building scalable, reliable, and efficient systems. Browse projects, technical blogs, and connect for software development collaborations. ">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shushant Rishav | Portfolio</title>
-    <link rel="stylesheet" href="/src/model.css">
-    <link rel="stylesheet" href="/src/style.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script src="https://kit.fontawesome.com/46048a6970.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./Images/logo.png" type="image/x-icon">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="./Css/style.css">
+  <link rel="stylesheet" href="./Css/nav.css">
+  <link rel="stylesheet" href="./Css/landing-page.css">
+  <link rel="stylesheet" href="./Css/model.css">
+  <link rel="stylesheet" href="./Css/about.css">
+  <link rel="stylesheet" href="./Css/project.css">
+  <link rel="stylesheet" href="./Css/skills.css">
+  <link rel="stylesheet" href="./Css/contact.css">
+  <link rel="stylesheet" href="./Css/footer.css">
+
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/46048a6970.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo"><a href="#"><img src="./Images/SVG/Logo.svg" alt=""></a></div>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="hamburger" id="hamburger">&#9776;</div>
+
+  <nav class="navbar">
+    <div class="navbar-placeholder"></div>
+    <div class="nav-container">
+      <div class="logo"><a href="#"><img src="./Images/Logo.svg" alt=""></a></div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+    </div>
+  </nav>
+
+  <section class="landing_page">
+    <video src="./Images/blackhole.webm" autoplay muted loop playsinline></video>
+    <canvas id="canvas"></canvas>
+
+    <div class="hero frosted-glass">
+      <div class="hero-left">
+        <h1>Hello, I'm <span>Shushant Rishav</span></h1>
+        <p>A Backend Developer with a Passion for Clean Architecture</p>
+
+        <div class="social-icons">
+          <a href="#" class="hex-icon">
+            <svg class="hex-bg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <polygon points="50,1 95,25 95,75 50,99 5,75 5,25" />
+            </svg>
+            <i class="fab fa-twitter"></i>
+          </a>
+
+          <a href="#" class="hex-icon">
+            <svg class="hex-bg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <polygon points="50,1 95,25 95,75 50,99 5,75 5,25" />
+            </svg>
+            <i class="fab fa-github"></i>
+          </a>
+
+          <a href="#" class="hex-icon">
+            <svg class="hex-bg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <polygon points="50,1 95,25 95,75 50,99 5,75 5,25" />
+            </svg>
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="#" class="hex-icon">
+            <svg class="hex-bg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <polygon points="50,1 95,25 95,75 50,99 5,75 5,25" />
+            </svg>
+            <i class="fa-brands fa-dev"></i>
+          </a>
         </div>
-    </nav>
+        <a href="#projects">
+          <div class="nv-project">
+            Projects
+          </div>
+        </a>
+      </div>
 
-    <!-- Welcome Section -->
-    <section id="welcome" class="welcome-section">
-        <div class="welcome-wrapper">
-            <div class="model" data-aos="zoom-in-left">
-                <div class="wrapper">
-                    <img src="./Images/model.png" alt="" />
-                    <div class="triangle">
-                        <div class="triangle-inner"></div>
-                    </div>
-                </div>
+      <div class="hero-right">
+        <div class="model" data-aos="zoom-in-left">
+          <div class="wrapper">
+            <img src="./Images/model.png" alt="" />
+            <div class="triangle">
+              <div class="triangle-inner"></div>
             </div>
-            <div class="welcome-text">
-                <h1>Hi, I'm Shushant</h1>
-                <p>A backend engineer passionate about building scalable, distributed systems and high-performance
-                    infrastructure.</p>
-                <div class="btnwrapper">
-                    <a href="#projects" class="btn">View My Work</a>
-                    <a href="https://drive.google.com/uc?export=download&id=1HRh5O4_m8ZPjJZ2_FMWkPcrXTcUWbaxo"
-                        class="btn">Download Resume</a>
-                </div>
-            </div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
 
-    <!-- About Section -->
-    <section id="about" class="about-section">
-        <div class="about-wrapper">
-            <div class="about-image"></div>
-            <div class="about-text">
-                <h2>About Me</h2>
-                <p>I&apos;m Shushant Rishav, a backend engineer with a strong foundation in computer science and a focus
-                    on
-                    building reliable, scalable backend systems and distributed services. Over the past few years,
-                    I&apos;ve
-                    worked extensively with Golang, Python, Docker, Redis, and cloud-native tools to design
-                    high-performance APIs, decentralized applications, and data-driven platforms. I enjoy architecting
-                    clean, efficient systems that solve real business problems, whether it&apos;s handling high-traffic
-                    URL
-                    shortening, enabling blockchain-based payments, or designing machine learning pipelines for
-                    large-scale data. I&apos;m passionate about distributed systems, systems design, and backend
-                    engineering
-                    best practices, and continuously challenge myself to deliver clean, performant, and maintainable
-                    code.</p>
-            </div>
+
+  </section>
+
+  <canvas id="canvas2"></canvas>
+
+  <section class="about-section frosted-glass" id="about">
+    <div class="about-wrapper">
+      <div class="about-image-wrapper">
+        <img src="./Images/admin_new.png" alt="Shushant Rishav" class="about-image" />
+      </div>
+      <div class="about-content">
+        <h1>Hello I am <span>Shushant Rishav</span></h1>
+        <p>
+          I'm Shushant Rishav, a backend engineer with a strong foundation in computer science and a focus on building
+          reliable, scalable backend systems and distributed services. Over the past few years, I've worked extensively
+          with Golang, Python, Docker, Redis, and cloud-native tools to design high-performance APIs, decentralized
+          applications, and data-driven platforms. <br>
+          I enjoy architecting clean, efficient systems that solve real business problems, whether it's handling
+          high-traffic URL shortening, enabling blockchain-based payments, or designing machine learning pipelines
+          for large-scale data. I'm passionate about distributed systems, systems design, and backend engineering
+          best practices, and continuously challenge myself to deliver clean, performant, and maintainable code.
+        </p>
+        <button class="about-cta">Get In Touch</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects-section frosted-glass">
+    <div class="projects-wrapper">
+      <div class="left">
+        <h1 class="section-title">Explore My Work</h1>
+        <p class="section-description">
+          Take a deep dive into the core of what I do. This space brings together the full spectrum of my technical
+          journey from hands-on coding projects and real-world applications to powerful APIs. <br>
+
+          Whether you're here to check out how I build, the kind of problems I solve, or the tools I’ve created for
+          developers, you’ll find a little bit of everything. My projects showcase both creativity and code combining
+          clean architecture with practical purpose. <br>
+          The APIs reflect my approach to scalable, developer-friendly solutions. And the certifications back it all up with proven credentials. <br>
+        </p>
+      </div>
+      <div class="right">
+        <div class="projects-tabs">
+          <button class="tab active" data-tab="projects">Projects</button>
+          <button class="tab" data-tab="apis">APIs</button>
         </div>
-    </section>
-
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills-section">
-        <div class="skills_wrapper">
-            <div class="skills-text">
-                <h2>Skills</h2>
-                <p>I specialize in backend engineering with expertise in Golang and Python for building distributed
-                    systems, high-performance APIs, and scalable web services. My technical toolkit includes Docker,
-                    Redis, and cloud-native development tools for containerized and microservices-based applications.
-                    I&apos;m experienced in machine learning workflows using TensorFlow, Scikit-learn, and LightGBM,
-                    with
-                    hands-on work in AI-driven platforms and data pipelines. Additionally, I have a solid foundation in
-                    core computer science principles like data structures, algorithms, networking, database management
-                    systems, and system design — ensuring the solutions I build are reliable, efficient, and scalable.
-                </p>
+        <div class="projects-panel active" id="projects-panel">
+          <div class="projects-grid">
+            <div class="project-card">
+              <img src="./Images/Projects/BlockCart.png" alt="Block Cart Project">
+              <a href="https://github.com/shushantrishav/Blockchain_In_Retail" class="overlay" target="_blank"><i
+                  class="fab fa-github"></i>&nbsp;View on GitHub</a>
             </div>
-            <div class="map" id="map" data-aos="zoom-in-up" data-aos-duration="2000">
-                <div id="holder"></div>
+            <div class="project-card">
+              <img src="./Images/Projects/CutLink.png" alt="CutLink Project">
+              <a href="https://github.com/shushantrishav/Go_URL_Shortner" class="overlay" target="_blank"><i
+                  class="fab fa-github"></i>&nbsp;View on GitHub</a>
             </div>
+            <div class="project-card">
+              <img src="./Images/Projects/newsSelect.png" alt="NewsSelect Project">
+              <a href="https://github.com/shushantrishav/NewsSelect" class="overlay" target="_blank"><i
+                  class="fab fa-github"></i>&nbsp;View on GitHub</a>
+            </div>
+            <div class="project-card">
+              <img src="./Images/Projects/malware.png" alt="Malware Project">
+              <a href="https://github.com/shushantrishav/Microsoft-Malware-Prediction" class="overlay"
+                target="_blank"><i class="fab fa-github"></i>&nbsp;View on GitHub</a>
+            </div>
+            <div class="project-card">
+              <img src="./Images/Projects/WordCloud.png" alt="WordCloud Project">
+              <a href="https://github.com/shushantrishav/word_cloud" class="overlay" target="_blank"><i
+                  class="fab fa-github"></i>&nbsp;View on GitHub</a>
+            </div>
+            <!-- Add more images here -->
+          </div>
         </div>
-    </section>
-
-
-
-    <!-- Project Section -->
-    <section id="projects" class="projects-section">
-        <div class="project_heading">
-            <h2>Project</h2>
+        <div id="apis-panel" class="projects-panel">
+          <ul class="api-list-enhanced">
+            <li>
+              <p><strong>Blockchain Payments & Loyalty API</strong>
+                Enables payments on blockchain and manages loyalty points.</p>
+            </li>
+            <li>
+              <p><strong>Go URL Shortener API</strong>
+                Shortens long URLs and stores them in Redis database.</p>
+            </li>
+            <li>
+              <p><strong>GitHub Stats Generator API</strong>
+                Generates dynamic SVGs based on your GitHub activity.</p>
+            </li>
+            <li>
+              <p><strong>Contact Form API</strong>
+                Forwards website form's submissions directly to your Gmail inbox.</p>
+            </li>
+          </ul>
         </div>
-        <div class="project">
-            <div class="project-text">
-                <h3>BlockCart (Decentralized Payments and Loyalty Management System)</h3>
-                <p>I built BlockCart to help retail businesses securely process customer payments and manage loyalty
-                    rewards without relying on banks or intermediaries. It runs on the Ethereum blockchain&apos;s
-                    Sepolia
-                    test network for demonstration purposes, ensuring secure, transparent, and immutable transactions.
-                    Alongside seamless payments, BlockCart includes a smart contract-based loyalty system that
-                    automatically issues and redeems customer reward points. The system processed over 200 demo
-                    transactions, reduced transaction fraud risks by 50&hyphen;70%, and showed the potential to increase
-                    customer retention by 5&hyphen;10%, boosting profits for loyal customers.</p>
-                <div class="project-btn"> <button
-                        onclick="window.open('https://github.com/shushantrishav/Blockchain_In_Retail')"><i
-                            class="fa-brands fa-github"></i> GitHub </button>
-                    <button onclick="window.open('https://blockcart.onrender.com/')"><i class="fa-solid fa-laptop"></i>
-                        Demo</button>
-                </div>
-            </div>
-            <div class="project-img"><img src="./Images/Project/BlockCart.png" alt="" srcset=""></div>
-        </div>
+      </div>
 
-        <div class="project reverse">
-            <div class="project-text">
-                <h3>CutLink (Distributed URL Shortening & Management Service)</h3>
-                <p>I built CutLink to help platform owners and developers manage large volumes of short URLs
-                    reliably in
-                    high-traffic environments. The service uses Go, Docker, and Redis with consistent hashing to
-                    evenly
-                    distribute traffic and ensure fault tolerance. It applies a 7-day time-to-live (TTL) for
-                    automatic
-                    link expiry and includes built-in rate limiting and real-time analytics. CutLink was tested to
-                    handle over 500,000 shortened URLs per month and maintained 10,000+ active links with consistent
-                    sub-1.5 second redirects, even under heavy concurrent request loads.</p>
-                <div class="project-btn"> <button
-                        onclick="window.open('https://github.com/shushantrishav/Go_URL_Shortner')"><i
-                            class="fa-brands fa-github"></i> GitHub </button>
-                    <button onclick="window.open('https://web.cutlink.in')"><i class="fa-solid fa-laptop"></i>
-                        Demo</button>
-                </div>
-            </div>
-            <div class="project-img"><img src="./Images/Project/CutLink.png" alt="" srcset=""></div>
-        </div>
 
-        <div class="project">
-            <div class="project-text">
-                <h3>NewsSelect (AI-Powered News Summarization Platform)</h3>
-                <p>I created NewsSelect to help news readers quickly digest important information by
-                    automatically
-                    summarizing lengthy news articles. It scrapes live articles from multiple sources and uses a
-                    Bi-directional LSTM model with an attention mechanism to generate clear, concise summaries.
-                    The
-                    platform processed over 42,000 articles, achieving an impressive 89.62% summarization
-                    accuracy. Its
-                    clean web interface, built with Django and REST APIs, helped users cut their reading time by
-                    around
-                    70% while still delivering key takeaways from every story.</p>
-                <div class="project-btn"> <button
-                        onclick="window.open('https://github.com/shushantrishav/NewsSelect')"><i
-                            class="fa-brands fa-github"></i> GitHub </button>
-                    <button onclick="window.open('https://shushantrishav.pythonanywhere.com/news/')"><i
-                            class="fa-solid fa-laptop"></i> Demo</button>
-                </div>
-            </div>
-            <div class="project-img"><img src="./Images/Project/newsSelect.png" alt="" srcset=""></div>
-        </div>
+    </div>
+  </section>
 
-        <div class="project reverse">
-            <div class="project-text">
-                <h3>Malware Prediction Model (Large-Scale Malware Risk Detection)</h3>
-                <p>I developed this Malware Prediction Model to help enterprise security teams detect and
-                    prioritize
-                    potential malware threats in massive system telemetry data. Using LightGBM, the system
-                    analyzed 8.9
-                    million records across 83 different features, achieving a 73.4% accuracy, 0.79 AUC, and
-                    0.73 F1
-                    score. To handle this scale, I optimized the data pipeline with Dask and Pandas,
-                    reducing memory use
-                    by 40% and preprocessing time by 3X. The result was a reliable, scalable risk detection
-                    system
-                    capable of identifying high-risk endpoints in real time.</p>
-                <div class="project-btn">
-                    <button onclick="window.open('https://github.com/shushantrishav/Microsoft-Malware-Prediction')"><i
-                            class="fa-brands fa-github"></i> GitHub </button>
-                </div>
-
-            </div>
-            <div class="project-img"><img src="./Images/Project/malware.png" alt="" srcset=""></div>
-        </div>
-
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <div class="contact-info">
-            <div class="note">
-                <div class="card_corner">
-                    <div class="card-corner_triangle"></div>
-                </div>
-                <h2>Thank You!</h2>
-                <p>Thank you for exploring my portfolio and taking a glimpse into my creative world. It has been a
-                    pleasure
-                    sharing my work with you. If you have any questions or would like to discuss potential
-                    collaborations,
-                    I'd be delighted to connect with you. Let's bring visions to life!</p>
-            </div>
-
+  <section id="skills" class="skills-section frosted-glass">
+    <div class="skills-wrapper">
+      <div class="left">
+        <h1 class="section-title">Technical Proficiency</h1>
+        <p class="section-description">
+          I specialize in backend engineering with a strong command of Go and Python for building scalable web services,
+          distributed systems, and high-performance APIs.
+          My tech stack spans Docker, Redis, and cloud-native tools for microservices and containerized deployments.
+          I also have hands-on experience in machine learning workflows using TensorFlow, Scikit-learn, and LightGBM,
+          with a focus on data pipelines and AI-powered platforms.
+          Coupled with a solid grounding in computer science fundamentals — including data structures, algorithms,
+          networking, databases, and system design — I consistently deliver robust, efficient, and scalable software
+          solutions.
+        </p>
+      </div>
+      <div class="right">
+        <div class="skills-tabs">
+          <button class="tab active" data-tab="skills">Skills</button>
+          <button class="tab" data-tab="certificates">Certificates</button>
         </div>
 
-        <form class="contact-form">
-            <h2>Drop Me A Messege !!</h2>
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="from_email" placeholder="Your Email" required>
-            <input type="text" name="subject" placeholder="Subject" required>
-            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-            <button type="button" id="contact-submit">Send</button>
-        </form>
+        <div class="skills-panel active" id="skills-panel">
+          <ul class="skills-category-list">
+            <!-- Programming Languages -->
+            <li class="skills-category">
+              <h2 class="category-title">Programming Languages</h2>
+              <ul class="skill-list">
+                <li class="skill-item">
+                  <i class="devicon-python-plain"></i> Python
+                </li>
+                <li class="skill-item"><i class="devicon-java-plain"></i> Java</li>
+                <li class="skill-item"><i class="devicon-go-original-wordmark"></i> GoLang</li>
+                <li class="skill-item"><i class="devicon-cplusplus-plain"></i> C++</li>
+                <li class="skill-item"><i class="devicon-c-plain"></i> C Programming</li>
+                <li class="skill-item"><i class="devicon-azuresqldatabase-plain"></i> SQL</li>
+                <li class="skill-item"><i class="devicon-solidity-plain"></i> Solidity</li>
+              </ul>
+            </li>
 
+            <!-- Frameworks & Libraries -->
+            <li class="skills-category">
+              <h2 class="category-title">Frameworks & Libraries</h2>
+              <ul class="skill-list">
+                <li class="skill-item"> <i class="devicon-tensorflow-original"></i> TensorFlow </li>
+                <li class="skill-item"> <i class="devicon-scikitlearn-plain"></i> Scikit-learn </li>
+                <li class="skill-item"> <i class="devicon-numpy-plain"></i> NumPy </li>
+                <li class="skill-item"> <i class="devicon-pandas-plain"></i> Pandas </li>
+                <li class="skill-item"> <i class="fa-solid fa-flask-vial"></i> SciPy</li>
+                <li class="skill-item"> <i class="devicon-django-plain"></i> Django </li>
+                <li class="skill-item"> <i class="devicon-react-original"></i> ReactJS </li>
+                <li class="skill-item"> <i class="devicon-plotly-plain"></i> Plotly</li>
+                <li class="skill-item"> <i class="devicon-fastapi-plain"></i> FastAPI </li>
+                <li class="skill-item"> <i class="devicon-spring-original"></i> Spring Cloud </li>
+              </ul>
+            </li>
 
+            <!-- DevOps & Blockchain Tools -->
+            <li class="skills-category">
+              <h2 class="category-title">DevOps & Blockchain Tools</h2>
+              <ul class="skill-list">
+                <li class="skill-item"> <i class="devicon-googlecloud-plain"></i> GCP</li>
+                <li class="skill-item"><i class="devicon-amazonwebservices-plain-wordmark"></i> AWS </li>
+                <li class="skill-item"><i class="devicon-jenkins-line"></i> Jenkins</li>
+                <li class="skill-item"><i class="devicon-docker-plain"></i> Docker</li>
+                <li class="skill-item"><i class="devicon-kubernetes-plain"></i> Kubernetes </li>
+                <li class="skill-item"><i class="devicon-git-plain"></i> Git</li>
+                <li class="skill-item"><i class="devicon-linux-plain"></i> Linux</li>
+                <li class="skill-item"><i class="devicon-bash-plain"></i> Bash Scripting</li>
+                <li class="skill-item"><i class="devicon-redis-plain-wordmark"></i> Redis</li>
+                <li class="skill-item"><i class="fa-brands fa-hive"></i>Web3</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div id="certificates-panel" class="skills-panel">
+          <ul class="cert-list-enhanced">
+            <li>
+              <h3>Language</h3>
+              <p><strong>EF SET English Certificate</strong> &mdash; EFSet</p>
+            </li>
 
-    </section>
+            <li>
+              <h3>Computer Science</h3>
+              <p><strong>Python for Everybody Specialization</strong> &mdash; University of Michigan</p>
+              <p><strong>IT Automation with Python</strong> &mdash; Google</p>
+              <p><strong>Open Source Software Dev, Linux & Git</strong> &mdash; The Linux Foundation</p>
+              <p><strong>Machine Learning on Google Cloud</strong> &mdash; Google Cloud</p>
+              <p><strong>Architecting with Google Compute Engine</strong> &mdash; Google Cloud</p>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section frosted-glass">
+    <div class="contact-container glass">
+      <h2>Contact Me</h2>
+      <form class="contact-form">
+        <div class="form-group">
+          <input type="text" name="name" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" placeholder="Your Email" required />
+        </div>
+        <div class="form-group">
+          <input type="text" name="subject" placeholder="Subject" required />
+        </div>
+        <div class="form-group">
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </div>
     <div id="toast" class="toast"></div>
-    <!-- Footer -->
-    <footer class="site-footer">
-        <div class="footer-social">
-            <ul class="btn-list rounded">
-                <li><a href="https://www.linkedin.com/in/shushantrishav/" class="btn-gradient rounded linkedin"><i
-                            class="fa fa-linkedin"></i></a></li>
-                <li><a href="https://github.com/shushantrishav" class="btn-gradient rounded github"><i
-                            class="fa fa-github"></i></a></li>
-                <li><a href="mailto:sushantrishav90@gmail.com" class="btn-gradient rounded gmail"><i
-                            class="fa-solid fa-envelope"></i></a></li>
-                <li><a href="https://x.com/ShushantRishav" class="btn-gradient rounded twitter"><i
-                            class="fa-brands fa-x-twitter"></i></a></li>
-                <li><a href="https://drive.google.com/uc?export=download&id=1HRh5O4_m8ZPjJZ2_FMWkPcrXTcUWbaxo"
-                        class="btn-gradient rounded download"><i class="fa fa-download"></i></a></li>
-            </ul>
-        </div>
 
-        <p class="footer-note">© 2023 Shushant Rishav. All rights reserved.</p>
-    </footer>
-    <script src="./src/script.js"></script>
-    <script src="./src/jquery.svg3dtagcloud.min.js"></script>
-    <script src="./src/tagcloud.js"></script>
-    <script src="./src/contact.js"></script>
+  </section>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-social">
+      <ul class="btn-list rounded">
+        <li><a href="https://www.linkedin.com/in/shushantrishav/" class="btn-gradient rounded linkedin"
+            target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        <li><a href="https://github.com/shushantrishav" class="btn-gradient rounded github" target="_blank"><i
+              class="fa fa-github"></i></a></li>
+        <li><a href="mailto:sushantrishav90@gmail.com" class="btn-gradient rounded gmail" target="_blank"><i
+              class="fa-solid fa-envelope"></i></a></li>
+        <li><a href="https://x.com/ShushantRishav" class="btn-gradient rounded twitter" target="_blank"><i
+              class="fa-brands fa-x-twitter"></i></a></li>
+        <li><a href="https://drive.google.com/uc?export=download&id=1HRh5O4_m8ZPjJZ2_FMWkPcrXTcUWbaxo"
+            class="btn-gradient rounded download" target="_blank"><i class="fa fa-download"></i></a></li>
+      </ul>
+    </div>
 
+    <p class="footer-note">© 2023 <i>Shushant Rishav</i>. All rights reserved.</p>
+  </footer>
+
+
+  <script src="./Js/blackholeCanvas.js"></script>
+  <script src="./Js/upwardStarsCanvas.js"></script>
+  <script src="./Js/projects_tab.js"></script>
+  <script src="./Js/skills_tab.js"></script>
+  <script src="./Js/nav.js"></script>
+  <script src="./Js/contactform.js"></script>
 </body>
 
 </html>
