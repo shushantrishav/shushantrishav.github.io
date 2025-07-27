@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const sendContactData = async (data) => {
     try {
-      const response = await fetch("https://contactsync-ov5o.onrender.com/contact", {
+      const response = await fetch("https://contactsync-ua7b.onrender.com/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data)
