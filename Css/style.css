@@ -1,0 +1,113 @@
+/* Reset & Base Setup */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%; /* 1rem = 10px */
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* Default (PC / Large Screen) */
+:root {
+  --text-color: #ffffff;
+  --text-color2: rgb(159, 95, 255);
+  --border-color: rgba(255, 255, 255, 0.2);
+
+  --font-heading: 3.6rem;
+  --font-heading-span: 3.6rem;
+  --font-paragraph: 1.8rem;
+}
+
+/* Tablet (768px – 1200px) */
+@media (max-width: 1200px) {
+  :root {
+    --font-heading: 4rem;
+    --font-heading-span: 4rem;
+    --font-paragraph: 2.5rem;
+  }
+}
+
+/* Phone (< 768px) */
+@media (max-width: 768px) {
+  :root {
+    --font-heading: 4.5rem;
+    --font-heading-span: 4.5rem;
+    --font-paragraph: 2.5rem;
+  }
+
+  .canvas {
+    display: none;
+  }
+}
+
+/* Body & Layout */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    135deg,
+    #ffffff 0%,
+    #f6f6f6 35%,
+    #f0f0f0 70%,
+    #ffffff 100%
+  );
+  position: relative;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+a,
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+a,
+p,
+li {
+  overflow: hidden;
+  font-size: var(--font-paragraph); /* fallback for text elements */
+}
+
+/* Apply specific font sizes */
+h1 {
+  font-size: var(--font-heading);
+}
+
+h1 span {
+  font-size: var(--font-heading-span);
+}
+
+p {
+  font-size: var(--font-paragraph);
+}
+
+/* Sections */
+section {
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Custom Scrollbar (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 1rem;
+}
+::-webkit-scrollbar-track {
+  background: #333;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(157, 99, 246, 0.7);
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(159, 95, 255);
+}

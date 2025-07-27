@@ -30,7 +30,7 @@ $(document).ready(function () {
       height: containerHeight,
       width: containerWidth,
       entries: entries,
-      radius: 85,
+      radius: 70,
       radiusMin: 75,
       bgDraw: true,
       bgColor: 'none',
