@@ -1,6 +1,9 @@
 $(document).ready(function () {
   var entries = [
     { label: "Golang" },
+    { label: "GenAI" },
+    { label: "GoRoutine" },
+    { label: "LLM (RAG)" },
     { label: "Python" },
     { label: "C++" },
     { label: "FastAPI" },
@@ -20,6 +23,8 @@ $(document).ready(function () {
     { label: "CI/CD" },
     { label: "Web3" },
     { label: "Solidity" },
+    { label: "SpringBoot" },
+    { label: "Gradle" },
     { label: "REST API" },
   ];
   var container = document.getElementById('map');
